@@ -11,6 +11,21 @@ def get_ga_toolbox(func_to_analyse):
 		except ZeroDivisionError:
 			return 1
 
+	def evalSymbReg(individual, points):
+		# Transform the tree expression in a callable function
+		func = toolbox.compile(expr=individual)
+		# Evaluate the mean squared error between the expression
+		# and the real function : x**4 + x**3 + x**2 + x
+		sqerrors = ((func(x) - func_to_analyse(x))**2 for x in points)
+		return math.fsum(sqerrors) / len(points),
+
+	def require_function(individual):
+		# penalise individuals that do not contain the original function
+
+		if func_to_analyse.__name__ in str(individual):
+			return True
+		return False
+
 	pset = gp.PrimitiveSet("MAIN", 1)
 	pset.addPrimitive(operator.add, 2)
 	pset.addPrimitive(operator.sub, 2)
@@ -33,15 +48,9 @@ def get_ga_toolbox(func_to_analyse):
 	toolbox.register("population", tools.initRepeat, list, toolbox.individual)
 	toolbox.register("compile", gp.compile, pset=pset)
 
-	def evalSymbReg(individual, points):
-		# Transform the tree expression in a callable function
-		func = toolbox.compile(expr=individual)
-		# Evaluate the mean squared error between the expression
-		# and the real function : x**4 + x**3 + x**2 + x
-		sqerrors = ((func(x) - func_to_analyse(x))**2 for x in points)
-		return math.fsum(sqerrors) / len(points),
 
 	toolbox.register("evaluate", evalSymbReg, points=[x/10. for x in range(-10,10)])
+	toolbox.decorate("evaluate", tools.DeltaPenalty(require_function, 1000.0))
 	toolbox.register("select", tools.selTournament, tournsize=3)
 	toolbox.register("mate", gp.cxOnePoint)
 	toolbox.register("expr_mut", gp.genFull, min_=0, max_=2)
