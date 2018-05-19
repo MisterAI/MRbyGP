@@ -20,6 +20,8 @@ def get_ga_toolbox(func_to_analyse):
 	pset.addPrimitive(math.cos, 1)
 	pset.addPrimitive(math.sin, 1)
 	pset.addEphemeralConstant("rand101", lambda: random.randint(-1,1))
+	pset.addEphemeralConstant("rand10010", lambda: random.randint(-10,10))
+	pset.addTerminal(math.pi)
 
 	creator.create("FitnessMin", base.Fitness, weights=(-1.0,))
 	creator.create("Individual", gp.PrimitiveTree, fitness=creator.FitnessMin)
