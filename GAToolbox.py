@@ -16,50 +16,58 @@ def get_ga_toolbox(func_to_analyse):
 		# Transform the tree expression in a callable function
 		func = toolbox.compile(expr=individual)
 		# Evaluate the mean squared error between the expression
-		# and the real function : x**4 + x**3 + x**2 + x
+		# and the function to analyse
 		sqerrors = ((func(x) - func_to_analyse(x))**2 for x in points)
 		return math.fsum(sqerrors) / len(points),
 
 	def require_function(individual):
 		# penalise individuals that do not contain the original function
-
 		if func_to_analyse.__name__ in str(individual):
 			return True
 		return False
 
 	def regex_matching_ind(individual, regex):
+		# penalise individuals that match the given regex
 		return not re.search(regex, str(individual))
 
 	def add_no_zero(individual):
+		# penalise adding a value of zero to an expression
 		return regex_matching_ind(individual, 
 			r'add\(((0, [-\.\w]+(\([\w]+\))?)|([-\.\w]+(\([\w]+\))?, 0))\)')
 
 	def sub_no_zero(individual):
+		# penalise subtracting a value of zero of an expression
 		return regex_matching_ind(individual, 
 			r'sub\([-\.\w]+(\([\w]+\))?, 0\)')
 
 	def sub_no_equal(individual):
+		# penalise subtracting equal values of each other
 		return regex_matching_ind(individual, 
 			r'sub\(([\w\.-]+), \1\)')
 
 	def mul_no_zero_one(individual):
+		# penalise multiplying an expression by either one or zero
 		return regex_matching_ind(individual, 
 			r'mul\((([01], [-\.\w]+(\([\w_]+\))?)|([-\.\w]+(\([\w]+\))?, [01]))\)')
 
 	def neg_no_double(individual):
+		# penalise a series of an even number of neg() functions
 		return regex_matching_ind(individual, 
 			r'(^|((?!neg)\w{3,}\()|((^|\()\w{1,2}\())'
 			+ r'((neg\(){2})+(?!neg\()[\w.-]+(\([\w.-]+\))?(\)\))+')
 
 	def div_no_zero_one(individual):
+		# penalise a division by zero
 		return regex_matching_ind(individual, 
 			r'protectedDiv\((([-\.\w]+(\([\w]+\))?, [01])|(0, [-\.\w]+(\([\w]+\))?))\)')
 
 	def orig_func_no_single(individual):
+		# penalise a line containing only a call to the original function
 		return regex_matching_ind(individual, 
 			r'(?m)^[\.\w]+(\([\w]+\)){1}$')
 
 
+	# collect the atomic building blocks of the individuals
 	pset = gp.PrimitiveSet("MAIN", 1)
 	pset.addPrimitive(operator.add, 2)
 	pset.addPrimitive(operator.sub, 2)
@@ -72,6 +80,7 @@ def get_ga_toolbox(func_to_analyse):
 	pset.addEphemeralConstant("rand10010", lambda: random.randint(-10,10))
 	pset.addTerminal(math.pi)
 
+	# define the general form of an individual
 	creator.create("FitnessMin", base.Fitness, weights=(-1.0,))
 	creator.create("Individual", gp.PrimitiveTree, fitness=creator.FitnessMin)
 
@@ -85,6 +94,7 @@ def get_ga_toolbox(func_to_analyse):
 	eval_range = [x/10. for x in range(-10,10)] + [x for x in range(-100, 100)]
 	toolbox.register("evaluate", evalSymbReg, points=eval_range)
 	
+	# add filters for unwanted behaviour
 	filters = [
 	require_function, 
 	add_no_zero, 
