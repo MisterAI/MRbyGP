@@ -66,6 +66,10 @@ def get_ga_toolbox(func_to_analyse):
 		return regex_matching_ind(individual, 
 			r'(?m)^[\.\w]+(\([\w, ]+\)){1}$')
 
+	def neg_no_zero(individual):
+		# penalise a negation of zero
+		return regex_matching_ind(individual, 
+			r'neg\(0\)')
 
 	# collect the atomic building blocks of the individuals
 	pset = gp.PrimitiveSet("MAIN", 1)
@@ -104,6 +108,7 @@ def get_ga_toolbox(func_to_analyse):
 	neg_no_double, 
 	div_no_zero_one, 
 	orig_func_no_single,
+	neg_no_zero,
 	]
 	for filter_ in filters:
 		toolbox.decorate('evaluate', tools.DeltaPenalty(filter_, 1000.))
