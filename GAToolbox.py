@@ -64,7 +64,7 @@ def get_ga_toolbox(func_to_analyse):
 	def orig_func_no_single(individual):
 		# penalise a line containing only a call to the original function
 		return regex_matching_ind(individual, 
-			r'(?m)^[\.\w]+(\([\w]+\)){1}$')
+			r'(?m)^[\.\w]+(\([\w, ]+\)){1}$')
 
 
 	# collect the atomic building blocks of the individuals
