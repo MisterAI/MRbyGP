@@ -1,6 +1,7 @@
 import random
 import math
 import operator
+import re
 from deap import creator, base, tools, gp
 
 def get_ga_toolbox(func_to_analyse):
@@ -26,6 +27,39 @@ def get_ga_toolbox(func_to_analyse):
 			return True
 		return False
 
+	def regex_matching_ind(individual, regex):
+		return not re.search(regex, str(individual))
+
+	def add_no_zero(individual):
+		return regex_matching_ind(individual, 
+			r'add\(((0, [-\.\w]+(\([\w]+\))?)|([-\.\w]+(\([\w]+\))?, 0))\)')
+
+	def sub_no_zero(individual):
+		return regex_matching_ind(individual, 
+			r'sub\([-\.\w]+(\([\w]+\))?, 0\)')
+
+	def sub_no_equal(individual):
+		return regex_matching_ind(individual, 
+			r'sub\(([\w\.-]+), \1\)')
+
+	def mul_no_zero_one(individual):
+		return regex_matching_ind(individual, 
+			r'mul\((([01], [-\.\w]+(\([\w_]+\))?)|([-\.\w]+(\([\w]+\))?, [01]))\)')
+
+	def neg_no_double(individual):
+		return regex_matching_ind(individual, 
+			r'(^|((?!neg)\w{3,}\()|((^|\()\w{1,2}\())'
+			+ r'((neg\(){2})+(?!neg\()[\w.-]+(\([\w.-]+\))?(\)\))+')
+
+	def div_no_zero_one(individual):
+		return regex_matching_ind(individual, 
+			r'protectedDiv\((([-\.\w]+(\([\w]+\))?, [01])|(0, [-\.\w]+(\([\w]+\))?))\)')
+
+	def orig_func_no_single(individual):
+		return regex_matching_ind(individual, 
+			r'(?m)^[\.\w]+(\([\w]+\)){1}$')
+
+
 	pset = gp.PrimitiveSet("MAIN", 1)
 	pset.addPrimitive(operator.add, 2)
 	pset.addPrimitive(operator.sub, 2)
@@ -48,9 +82,22 @@ def get_ga_toolbox(func_to_analyse):
 	toolbox.register("population", tools.initRepeat, list, toolbox.individual)
 	toolbox.register("compile", gp.compile, pset=pset)
 
-
-	toolbox.register("evaluate", evalSymbReg, points=[x/10. for x in range(-10,10)])
-	toolbox.decorate("evaluate", tools.DeltaPenalty(require_function, 1000.0))
+	eval_range = [x/10. for x in range(-10,10)] + [x for x in range(-100, 100)]
+	toolbox.register("evaluate", evalSymbReg, points=eval_range)
+	
+	filters = [
+	require_function, 
+	add_no_zero, 
+	sub_no_zero, 
+	sub_no_equal, 
+	mul_no_zero_one, 
+	neg_no_double, 
+	div_no_zero_one, 
+	orig_func_no_single,
+	]
+	for filter_ in filters:
+		toolbox.decorate('evaluate', tools.DeltaPenalty(filter_, 1000.))
+	
 	toolbox.register("select", tools.selTournament, tournsize=3)
 	toolbox.register("mate", gp.cxOnePoint)
 	toolbox.register("expr_mut", gp.genFull, min_=0, max_=2)

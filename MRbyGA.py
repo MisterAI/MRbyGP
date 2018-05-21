@@ -13,7 +13,7 @@ def main():
 	random.seed(318)
 
 	pop = toolbox.population(n=300)
-	hof = tools.HallOfFame(10)
+	hof = tools.HallOfFame(30)
 	
 	stats_fit = tools.Statistics(lambda ind: ind.fitness.values)
 	stats_size = tools.Statistics(len)
@@ -27,7 +27,7 @@ def main():
 								   halloffame=hof, verbose=True)
 	# print(log)
 	for ind in hof:
-		print(ind)
+		print('%.4f'%(ind.fitness.getValues())[0], ':', ind)
 	return pop, log, hof
 
 if __name__ == "__main__":
