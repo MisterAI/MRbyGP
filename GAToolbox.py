@@ -3,6 +3,8 @@ import math
 import operator
 import re
 from deap import creator, base, tools, gp
+import ast
+import astor
 
 def get_ga_toolbox(func_to_analyse):
 	def protectedDiv(left, right):
@@ -69,7 +71,65 @@ def get_ga_toolbox(func_to_analyse):
 	def neg_no_zero(individual):
 		# penalise a negation of zero
 		return regex_matching_ind(individual, 
-			r'neg\(0\)')
+			r'neg\((0|-1)\)')
+
+	def check_childs(ast_node, constant_subtrees):
+		has_non_constant_child = False
+		for node in ast.walk(ast_node):
+			if isinstance(node, ast.Name):
+				if 'ARG' in node.id:
+					has_non_constant_child = True
+		if not has_non_constant_child:
+			constant_subtrees.append(ast_node)
+		else:
+			for child in ast.iter_child_nodes(ast_node):
+				check_childs(child, constant_subtrees)
+
+	def ast_no_zero_one_subtree(individual):
+		# penalise a subtree in the computational graph that
+		# evaluates to zero or one
+
+		# convert graph to AST
+		ind_function = str(individual)
+		my_ast = ast.parse(ind_function)
+
+		# find subtrees in AST that only contain constants
+		constant_subtrees = []
+		check_childs(my_ast, constant_subtrees)
+
+		has_zero_one_subtree = False
+		for subtree in constant_subtrees:
+			# check for the presence of at least one child node
+			# (subtree shouldn't be a terminal)
+			has_child_nodes = False
+			for child in ast.iter_child_nodes(subtree):
+				if isinstance(child, ast.Load):
+					continue
+				has_child_nodes = True
+				break
+
+			if has_child_nodes:
+				# evaluate the subtree
+				source = astor.to_source(subtree)
+				globals_ = {
+					'protectedDiv': protectedDiv,
+					'add': operator.add,
+					'sub': operator.sub,
+					'mul': operator.mul,
+					'neg': operator.neg,
+					'cos': math.cos,
+					'sin': math.sin,
+					'pi': math.pi,
+					}
+				return_val = eval(source, globals_)
+
+				# check if the return value is close to either zero or one
+				margin = 0.0001
+				if ((0. - margin) < return_val < margin) \
+					or ((1. - margin) < return_val < (1. + margin)):
+					# found a 0/1 subtree
+					has_zero_one_subtree = True
+		return not has_zero_one_subtree
 
 	# collect the atomic building blocks of the individuals
 	pset = gp.PrimitiveSet("MAIN", 1)
@@ -100,16 +160,17 @@ def get_ga_toolbox(func_to_analyse):
 	
 	# add filters for unwanted behaviour
 	filters = [
-	require_function, 
-	add_no_zero, 
-	sub_no_zero, 
-	sub_no_equal, 
-	mul_no_zero_one, 
-	neg_no_double, 
-	div_no_zero_one, 
-	orig_func_no_single,
-	neg_no_zero,
-	]
+		require_function,
+		add_no_zero,
+		sub_no_zero,
+		sub_no_equal,
+		mul_no_zero_one,
+		neg_no_double,
+		div_no_zero_one,
+		orig_func_no_single,
+		neg_no_zero,
+		ast_no_zero_one_subtree,
+		]
 	for filter_ in filters:
 		toolbox.decorate('evaluate', tools.DeltaPenalty(filter_, 1000.))
 	
