@@ -3,14 +3,14 @@ import math
 import numpy
 import operator
 from deap import creator, base, tools, algorithms, gp
-from GAToolbox import get_ga_toolbox
+from GAToolbox import get_toolbox
 
 def main():
 	# list all the functions to analyse
 	functions = [math.sin]
 
 	# create the toolbox
-	toolbox = get_ga_toolbox(functions[0])
+	toolbox = get_toolbox(functions[0])
 
 	random.seed(318)
 
