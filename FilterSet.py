@@ -19,33 +19,33 @@ def regex_matching_ind(individual, regex):
 def add_no_zero(individual):
 	# penalise adding a value of zero to an expression
 	return regex_matching_ind(individual, 
-		r'add\(((0, [-\.\w]+(\([\w]+\))?)|([-\.\w]+(\([\w]+\))?, 0))\)')
+		r'add\(((0, [\-\.\w]+(\([\w]+\))?)|([\-\.\w]+(\([\w]+\))?, 0))\)')
 
 def sub_no_zero(individual):
 	# penalise subtracting a value of zero of an expression
 	return regex_matching_ind(individual, 
-		r'sub\([-\.\w]+(\([\w]+\))?, 0\)')
+		r'sub\([\-\.\w]+(\([\w]+\))?, 0\)')
 
 def sub_no_equal(individual):
 	# penalise subtracting equal values of each other
 	return regex_matching_ind(individual, 
-		r'sub\(([\w\.-]+), \1\)')
+		r'sub\(([\w\.\-]+), \1\)')
 
 def mul_no_zero_one(individual):
 	# penalise multiplying an expression by either one or zero
 	return regex_matching_ind(individual, 
-		r'mul\((([01], [-\.\w]+(\([\w_]+\))?)|([-\.\w]+(\([\w]+\))?, [01]))\)')
+		r'mul\((([01], [\-\.\w]+(\([\w_]+\))?)|([\-\.\w]+(\([\w]+\))?, [01]))\)')
 
 def neg_no_double(individual):
 	# penalise a series of an even number of neg() functions
 	return regex_matching_ind(individual, 
 		r'(^|((?!neg)\w{3,}\()|((^|\()\w{1,2}\())'
-		+ r'((neg\(){2})+(?!neg\()[\w.-]+(\([\w.-]+\))?(\)\))+')
+		+ r'((neg\(){2})+(?!neg\()[\w.\-]+(\([\w.\-]+\))?(\)\))+')
 
 def div_no_zero_one(individual):
 	# penalise a division by zero
 	return regex_matching_ind(individual, 
-		r'protectedDiv\((([-\.\w]+(\([\w]+\))?, [01])|(0, [-\.\w]+(\([\w]+\))?))\)')
+		r'protectedDiv\((([\-\.\w]+(\([\w]+\))?, [01])|(0, [\-\.\w]+(\([\w]+\))?))\)')
 
 def orig_func_no_single(individual):
 	# penalise a line containing only a call to the original function
@@ -56,6 +56,21 @@ def neg_no_zero(individual):
 	# penalise a negation of zero
 	return regex_matching_ind(individual, 
 		r'neg\((0|-1)\)')
+
+def sin_no_zero_pi(individual):
+	# don't calculate the sin() of zero or n*pi
+	return regex_matching_ind(individual, 
+		r'sin\((3\.141592653589793|0|mul\(((\-?[0-9]+, 3.141592653589793)|(3\.141592653589793, \-?[0-9]+))\)|add\(3\.141592653589793, 3\.141592653589793\))\)')
+
+def add_no_inverse(individual):
+	# don't add inverse numbers
+	return regex_matching_ind(individual, 
+		r'add\(((\-([\.\d]+), \3)|(([\.\d]+), \-\5))\)')
+
+def cos_no_zero_pi(individual):
+	# don't calculate the cos() of zero or n*pi
+	return regex_matching_ind(individual, 
+		r'cos\((3\.141592653589793|0|mul\(((\-?[0-9]+, 3.141592653589793)|(3\.141592653589793, \-?[0-9]+))\)|add\(3\.141592653589793, 3\.141592653589793\))\)')
 
 def check_childs(ast_node, constant_subtrees):
 	has_non_constant_child = False
@@ -125,5 +140,8 @@ filters = [
 	div_no_zero_one,
 	orig_func_no_single,
 	neg_no_zero,
-	# ast_no_zero_one_subtree,
+	sin_no_zero_pi,
+	add_no_inverse,
+	cos_no_zero_pi,
+	ast_no_zero_one_subtree,
 	]
