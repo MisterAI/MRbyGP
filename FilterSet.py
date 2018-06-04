@@ -47,6 +47,11 @@ def div_no_zero_one(individual):
 	return regex_matching_ind(individual, 
 		r'protectedDiv\((([\-\.\w]+(\([\w]+\))?, [01])|(0, [\-\.\w]+(\([\w]+\))?))\)')
 
+def div_no_equal(individual):
+	# penalise dividing equal values of each other
+	return regex_matching_ind(individual, 
+		r'protectedDiv\(([\w\.\-]+), \1\)')
+
 def orig_func_no_single(individual):
 	# penalise a line containing only a call to the original function
 	return regex_matching_ind(individual, 
@@ -138,6 +143,7 @@ filters = [
 	mul_no_zero_one,
 	neg_no_double,
 	div_no_zero_one,
+	#div_no_equal,
 	orig_func_no_single,
 	neg_no_zero,
 	sin_no_zero_pi,
