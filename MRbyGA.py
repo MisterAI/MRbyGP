@@ -12,7 +12,7 @@ def main():
 	# create the toolbox
 	toolbox = get_toolbox(functions[0])
 
-	random.seed(318)
+	# random.seed(318)
 
 	# create a new population
 	pop = toolbox.population(n=300)
@@ -28,7 +28,7 @@ def main():
 	mstats.register("max", numpy.max)
 
 	# do the evolution
-	pop, log = algorithms.eaSimple(pop, toolbox, 0.5, 0.1, 40, stats=mstats,
+	pop, log = algorithms.eaSimple(pop, toolbox, 0.5, 0.1, 1, stats=mstats,
 								   halloffame=hof, verbose=True)
 	# print(log)
 	# print the Hall of Fame together with their fitness value

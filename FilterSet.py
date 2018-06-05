@@ -3,7 +3,7 @@ import operator
 import re
 import ast
 import astor
-from protectedDiv import protectedDiv
+from helperFunctions import protectedDiv, sin_
 
 
 def require_function(individual):
@@ -122,7 +122,7 @@ def ast_no_zero_one_subtree(individual):
 				'mul': operator.mul,
 				'neg': operator.neg,
 				'cos': math.cos,
-				'sin': math.sin,
+				'sin_': sin_,
 				'pi': math.pi,
 				}
 			return_val = eval(source, globals_)
