@@ -36,8 +36,8 @@ def main():
 	my_hof = sorted(my_hof, key=lambda individual: individual.fitness.getValues()[1])
 	# print the Hall of Fame together with their fitness value
 	for ind in my_hof:
-		# print('%.4f, %f'%(ind.fitness.getValues()), ':')
-		# print(ind)
+		print('%.4f, %f'%(ind.fitness.getValues()), ':')
+		print(ind)
 		sympy.pprint(convert_to_sympy_expr(ind))
 	return pop, log, hof
 
