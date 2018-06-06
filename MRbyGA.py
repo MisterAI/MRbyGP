@@ -30,7 +30,7 @@ def main():
 
 	# do the evolution
 	pop, log = algorithms.eaMuPlusLambda(pop, toolbox, mu=300, lambda_=400, cxpb=0.5, 
-		mutpb=0.1, ngen=10, stats=mstats, halloffame=hof, verbose=True)
+		mutpb=0.1, ngen=40, stats=mstats, halloffame=hof, verbose=True)
 
 	my_hof = [ind for ind in pop if 0.001 >= ind.fitness.getValues()[0]]
 	my_hof = sorted(my_hof, key=lambda individual: individual.fitness.getValues()[1])
