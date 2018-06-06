@@ -7,5 +7,5 @@ def protectedDiv(left, right):
 	except ZeroDivisionError:
 		return 1
 
-def sin_(x):
+def sinX(x):
 	return math.sin(x)
