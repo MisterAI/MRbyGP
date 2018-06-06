@@ -1,0 +1,4 @@
+deap
+sympy
+zss
+astor
