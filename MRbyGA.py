@@ -20,11 +20,15 @@ def main():
 	hof = tools.ParetoFront()
 	
 	# collect some statistics
-	stats_fit = tools.Statistics(lambda ind: ind.fitness.values)
+	stats_fit_mse = tools.Statistics(lambda ind: ind.fitness.values[0])
+	stats_fit_dist = tools.Statistics(lambda ind: ind.fitness.values[1])
 	stats_size = tools.Statistics(len)
-	mstats = tools.MultiStatistics(fitness=stats_fit, size=stats_size)
+	mstats = tools.MultiStatistics(
+		fitness_mse=stats_fit_mse, 
+		fitness_dist=stats_fit_dist, 
+		size=stats_size)
 	mstats.register("avg", lambda data: numpy.around(numpy.mean(data), decimals=4))
-	mstats.register("std", lambda data: numpy.around(numpy.std(data), decimals=4))
+	# mstats.register("std", lambda data: numpy.around(numpy.std(data), decimals=4))
 	mstats.register("min", lambda data: numpy.around(numpy.min(data), decimals=4))
 	mstats.register("max", lambda data: numpy.around(numpy.max(data), decimals=4))
 
@@ -37,7 +41,7 @@ def main():
 	# print the Hall of Fame together with their fitness value
 	for ind in my_hof:
 		print('%.4f, %f'%(ind.fitness.getValues()), ':')
-		print(ind)
+		# print(ind)
 		sympy.pprint(convert_to_sympy_expr(ind))
 	return pop, log, hof
 

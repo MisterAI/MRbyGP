@@ -13,7 +13,8 @@ def evalSymbReg(individual, points, toolbox):
 	# Evaluate the mean squared error between the expression
 	# and the function to analyse
 	sqerrors = ((func(x) - individual.target_func(x))**2 for x in points)
-	return math.fsum(sqerrors) / len(points)
+	avg_error = math.fsum(sqerrors) / len(points)
+	return 1 - math.pow(1.16, -avg_error)
 
 class ReplaceDiv(ast.NodeTransformer):
 	def visit_Call(self, node):
@@ -137,7 +138,8 @@ def evalSimplicity(individual, target_func):
 	expr = convert_to_sympy_expr(individual)
 
 	dist = zss.simple_distance(expr, sympy.sympify('sinX(x)'), get_children, get_label, strdist)
-	return -dist
+	return 1 - math.pow(1.016, -dist)
+	# return -dist
 
 def get_fitness(individual, target_func, toolbox, points):
 	return evalSymbReg(individual, points, toolbox), evalSimplicity(individual, target_func)

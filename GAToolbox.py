@@ -21,8 +21,8 @@ def get_toolbox(target_func):
 	pset.addEphemeralConstant("rand10010", lambda: random.randint(-10,10))
 	pset.addTerminal(math.pi)
 
-	mse_fitness_weight = -2.0
-	symbolic_equivalence_fitness_weight = -1.0
+	mse_fitness_weight = -1.0
+	symbolic_equivalence_fitness_weight = 2.0
 	weights = (mse_fitness_weight, symbolic_equivalence_fitness_weight)
 
 	# define the general form of an individual
