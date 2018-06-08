@@ -77,6 +77,10 @@ def cos_no_zero_pi(individual):
 	return regex_matching_ind(individual, 
 		r'cos\((3\.141592653589793|0|mul\(((\-?[0-9]+, 3.141592653589793)|(3\.141592653589793, \-?[0-9]+))\)|add\(3\.141592653589793, 3\.141592653589793\))\)')
 
+def nested_pow(individual):
+	return regex_matching_ind(individual,
+		r'protectedPow\(((protectedPow\(([\-\.\w]+(\([\w]+\))?, [\-\.\w]+(\([\w]+\))?), [\-\.\w]+(\([\w]+\))?) | ([\-\.\w]+(\([\w]+\))?), protectedPow([\-\.\w]+(\([\w]+\))?, [\-\.\w]+(\([\w]+\))?))')
+
 def check_childs(ast_node, constant_subtrees):
 	has_non_constant_child = False
 	for node in ast.walk(ast_node):
@@ -150,4 +154,5 @@ filters = [
 	# add_no_inverse,
 	# cos_no_zero_pi,
 	# ast_no_zero_one_subtree,
+	nested_pow
 	]

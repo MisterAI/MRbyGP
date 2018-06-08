@@ -9,3 +9,18 @@ def protectedDiv(left, right):
 
 def sinX(x):
 	return math.sin(x)
+
+def protectedPow(left, right):
+	if isinstance(right, float):
+		right = int(right)
+	try:
+		return left ** right
+
+	except ZeroDivisionError:
+		return 1
+
+	except ValueError:
+		return 1
+
+	except OverflowError:
+		return -1
