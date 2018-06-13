@@ -10,16 +10,24 @@ import datetime
 import time
 
 def main():
+	init_pop_size = 1000
+	num_offsprings = 400
+	pop_size = 300
+	num_generations = 10
+	mse_fitness_weight = -1.0
+	symb_equiv_fitness_weight = 2.0
+	weights = (mse_fitness_weight, symb_equiv_fitness_weight)
 	# list all the functions to analyse
 	functions = [math.sin]
 
 	# create the toolbox
-	toolbox = get_toolbox(functions[0])
+	toolbox = get_toolbox(functions[0], weights)
 
 	# random.seed(318)
 
 	# create a new population
-	pop = toolbox.population(n=1000)
+	pop = toolbox.population(n=init_pop_size)
+	# hof = tools.HallOfFame(40)
 	hof = tools.ParetoFront()
 	
 	# collect some statistics
@@ -37,8 +45,8 @@ def main():
 
 	start = time.time()
 	# do the evolution
-	pop, log = algorithms.eaMuPlusLambda(pop, toolbox, mu=300, lambda_=400, cxpb=0.5, 
-		mutpb=0.1, ngen=10000, stats=mstats, halloffame=hof, verbose=True)
+	pop, log = algorithms.eaMuPlusLambda(pop, toolbox, mu=pop_size, lambda_=num_offsprings, cxpb=0.5, 
+		mutpb=0.1, ngen=num_generations, stats=mstats, halloffame=hof, verbose=True)
 	end = time.time()
 
 	my_hof = [ind for ind in pop if 0.001 >= ind.fitness.getValues()[0]]

@@ -6,7 +6,7 @@ from FitnessEvaluation import get_fitness
 from FilterSet import filters
 from helperFunctions import protectedDiv, sinX, protectedPow
 
-def get_toolbox(target_func):
+def get_toolbox(target_func, weights):
 
 	# collect the atomic building blocks of the individuals
 	pset = gp.PrimitiveSet("MAIN", 1)
@@ -21,11 +21,6 @@ def get_toolbox(target_func):
 	pset.addEphemeralConstant("rand101", lambda: random.randint(-1,1))
 	pset.addEphemeralConstant("rand10010", lambda: random.randint(-10,10))
 	pset.addTerminal(math.pi)
-
-	mse_fitness_weight = -1.0
-	#symbolic_equivalence_fitness_weight = 2.0
-	symbolic_equivalence_fitness_weight = 2.0
-	weights = (mse_fitness_weight, symbolic_equivalence_fitness_weight)
 
 	# define the general form of an individual
 	creator.create("FitnessMulti", base.Fitness, weights=weights)
