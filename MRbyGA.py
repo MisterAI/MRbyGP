@@ -38,7 +38,7 @@ def main():
 	start = time.time()
 	# do the evolution
 	pop, log = algorithms.eaMuPlusLambda(pop, toolbox, mu=300, lambda_=400, cxpb=0.5, 
-		mutpb=0.1, ngen=10000, stats=mstats, halloffame=hof, verbose=True)
+		mutpb=0.1, ngen=100, stats=mstats, halloffame=hof, verbose=True)
 	end = time.time()
 
 	my_hof = [ind for ind in pop if 0.001 >= ind.fitness.getValues()[0]]
@@ -47,7 +47,10 @@ def main():
 	currentTime = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 	file = open("MRbyGA_" + currentTime + ".txt", 'w', encoding='utf8')
 
-	file.write("Consumed time: " + str(end-start) + '\n')
+	m, s = divmod((end-start), 60)
+	h, m = divmod(m, 60)
+
+	file.write("Consumed time: %d:%02d:%02d" % (h,m,s) + '\n')
 
 	# print the HoF values without overlap
 	temp = ""

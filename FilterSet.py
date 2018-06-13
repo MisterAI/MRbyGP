@@ -154,5 +154,5 @@ filters = [
 	# add_no_inverse,
 	# cos_no_zero_pi,
 	# ast_no_zero_one_subtree,
-	nested_pow
+	#nested_pow
 	]

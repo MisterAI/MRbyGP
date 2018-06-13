@@ -1,0 +1,5 @@
+Consumed time: 0:05:30
+0.0000, 0.348567: 
+neg(sinX(neg(sub(3.141592653589793, ARG0))))
+0.0001, 1.000000: 
+neg(sinX(sub(neg(sub(3.141592653589793, sub(3.141592653589793, ARG0))), sinX(mul(sub(sinX(sub(sinX(8), 1)), 1), neg(3.141592653589793))))))

@@ -1,0 +1,985 @@
+Consumed time: 0:24:57
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, cos(protectedDiv(3.141592653589793, ARG0))), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, mul(cos(protectedDiv(3.141592653589793, ARG0)), 3.141592653589793)), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, cos(protectedDiv(3.141592653589793, ARG0))), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(protectedDiv(3.141592653589793, cos(protectedDiv(3.141592653589793, ARG0))), ARG0), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, cos(protectedDiv(3.141592653589793, ARG0))), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, mul(cos(protectedDiv(3.141592653589793, ARG0)), ARG0)), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, mul(ARG0, sub(3.141592653589793, ARG0))), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, mul(cos(protectedDiv(3.141592653589793, ARG0)), ARG0)), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, cos(protectedDiv(3.141592653589793, ARG0))), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, mul(cos(protectedDiv(3.141592653589793, ARG0)), 3.141592653589793)), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, cos(protectedDiv(3.141592653589793, ARG0))), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(3.141592653589793, sinX(add(sub(protectedDiv(3.141592653589793, ARG0), ARG0), cos(protectedDiv(3.141592653589793, ARG0))))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, cos(protectedDiv(3.141592653589793, ARG0))), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(protectedDiv(3.141592653589793, cos(protectedDiv(3.141592653589793, ARG0))), ARG0), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, cos(protectedDiv(3.141592653589793, ARG0))), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, cos(protectedDiv(3.141592653589793, ARG0))), ARG0))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, mul(ARG0, sub(3.141592653589793, ARG0))), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, mul(cos(protectedDiv(3.141592653589793, ARG0)), ARG0)), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, cos(protectedDiv(3.141592653589793, ARG0))), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, mul(cos(protectedDiv(3.141592653589793, ARG0)), ARG0)), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, cos(protectedDiv(3.141592653589793, ARG0))), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, mul(ARG0, sub(3.141592653589793, ARG0))), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, cos(protectedDiv(3.141592653589793, ARG0))), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, mul(ARG0, sub(3.141592653589793, ARG0))), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, cos(protectedDiv(3.141592653589793, ARG0))), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, mul(cos(protectedDiv(3.141592653589793, ARG0)), ARG0)), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, cos(protectedDiv(3.141592653589793, ARG0))), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, cos(protectedDiv(3.141592653589793, ARG0))), ARG0))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, cos(protectedDiv(3.141592653589793, ARG0))), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, mul(cos(protectedDiv(3.141592653589793, ARG0)), ARG0)), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, cos(protectedDiv(3.141592653589793, ARG0))), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, mul(ARG0, sub(3.141592653589793, ARG0))), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, cos(protectedDiv(3.141592653589793, ARG0))), protectedDiv(3.141592653589793, 6)))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(neg(3.141592653589793), protectedPow(-1, sinX(add(sub(3.141592653589793, cos(protectedDiv(3.141592653589793, ARG0))), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, cos(protectedDiv(3.141592653589793, ARG0))), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, mul(cos(protectedDiv(3.141592653589793, ARG0)), ARG0)), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, mul(ARG0, sub(3.141592653589793, ARG0))), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, mul(cos(protectedDiv(3.141592653589793, ARG0)), 3.141592653589793)), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, cos(protectedDiv(3.141592653589793, ARG0))), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(3.141592653589793, sinX(add(sub(protectedDiv(3.141592653589793, ARG0), ARG0), cos(protectedDiv(3.141592653589793, ARG0))))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(sub(3.141592653589793, ARG0), cos(protectedDiv(3.141592653589793, ARG0))), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, mul(ARG0, sub(3.141592653589793, mul(3.141592653589793, ARG0)))), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, cos(protectedDiv(3.141592653589793, ARG0))), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(3.141592653589793, sinX(add(sub(3.141592653589793, cos(protectedDiv(3.141592653589793, ARG0))), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, cos(protectedDiv(3.141592653589793, ARG0))), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(protectedDiv(3.141592653589793, cos(protectedDiv(3.141592653589793, ARG0))), ARG0), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(3.141592653589793, sinX(add(sub(protectedDiv(3.141592653589793, ARG0), ARG0), cos(protectedDiv(3.141592653589793, ARG0))))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, cos(protectedDiv(3.141592653589793, ARG0))), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(3.141592653589793, sinX(add(sub(3.141592653589793, cos(protectedDiv(3.141592653589793, ARG0))), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, cos(protectedDiv(3.141592653589793, ARG0))), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(3.141592653589793, sinX(add(sub(3.141592653589793, cos(protectedDiv(3.141592653589793, ARG0))), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, mul(ARG0, sub(3.141592653589793, ARG0))), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(3.141592653589793, sinX(add(sub(protectedDiv(3.141592653589793, -1), ARG0), cos(protectedDiv(3.141592653589793, ARG0))))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, cos(protectedDiv(3.141592653589793, ARG0))), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(protectedDiv(3.141592653589793, cos(protectedDiv(3.141592653589793, ARG0))), ARG0), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, cos(protectedDiv(3.141592653589793, ARG0))), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, cos(cos(protectedDiv(3.141592653589793, ARG0)))), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, cos(protectedDiv(3.141592653589793, ARG0))), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(sub(3.141592653589793, ARG0), cos(protectedDiv(3.141592653589793, ARG0))), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, cos(protectedDiv(3.141592653589793, ARG0))), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, mul(cos(protectedDiv(3.141592653589793, ARG0)), ARG0)), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, mul(ARG0, sub(3.141592653589793, mul(3.141592653589793, ARG0)))), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, cos(protectedDiv(3.141592653589793, ARG0))), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(-1, cos(protectedDiv(3.141592653589793, ARG0))), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, cos(protectedDiv(3.141592653589793, ARG0))), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, cos(protectedDiv(3.141592653589793, ARG0))), protectedDiv(3.141592653589793, ARG0)))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, cos(protectedDiv(3.141592653589793, ARG0))), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, mul(ARG0, sub(3.141592653589793, ARG0))), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, cos(protectedDiv(3.141592653589793, ARG0))), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, mul(cos(protectedDiv(3.141592653589793, ARG0)), 3.141592653589793)), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, cos(protectedDiv(3.141592653589793, ARG0))), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, mul(ARG0, sub(3.141592653589793, ARG0))), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(neg(3.141592653589793), protectedPow(-1, sinX(add(sub(3.141592653589793, cos(protectedDiv(3.141592653589793, ARG0))), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(protectedDiv(3.141592653589793, ARG0), cos(protectedDiv(3.141592653589793, ARG0))), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, mul(ARG0, sub(3.141592653589793, ARG0))), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, cos(protectedDiv(3.141592653589793, ARG0))), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, mul(cos(protectedDiv(3.141592653589793, ARG0)), ARG0)), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, cos(protectedDiv(3.141592653589793, ARG0))), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(protectedDiv(3.141592653589793, cos(protectedDiv(3.141592653589793, ARG0))), ARG0), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, cos(protectedDiv(3.141592653589793, ARG0))), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, mul(ARG0, sub(3.141592653589793, ARG0))), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, cos(protectedDiv(3.141592653589793, ARG0))), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, cos(protectedDiv(3.141592653589793, ARG0))), ARG0))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, cos(protectedDiv(3.141592653589793, ARG0))), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, mul(ARG0, sub(3.141592653589793, mul(3.141592653589793, ARG0)))), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, cos(protectedDiv(3.141592653589793, ARG0))), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(3.141592653589793, sinX(add(sub(3.141592653589793, ARG0), cos(protectedDiv(3.141592653589793, add(3.141592653589793, 5)))))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(neg(3.141592653589793), protectedPow(-1, sinX(add(sub(3.141592653589793, cos(protectedDiv(3.141592653589793, ARG0))), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, cos(protectedDiv(3.141592653589793, ARG0))), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, mul(cos(protectedDiv(3.141592653589793, ARG0)), ARG0)), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, cos(protectedDiv(3.141592653589793, ARG0))), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, mul(ARG0, sub(3.141592653589793, ARG0))), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, cos(protectedDiv(3.141592653589793, ARG0))), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, mul(cos(protectedDiv(3.141592653589793, ARG0)), 3.141592653589793)), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, mul(cos(protectedDiv(3.141592653589793, ARG0)), ARG0)), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(protectedDiv(3.141592653589793, cos(protectedDiv(3.141592653589793, ARG0))), ARG0), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, cos(protectedDiv(3.141592653589793, ARG0))), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(protectedDiv(3.141592653589793, cos(protectedDiv(3.141592653589793, ARG0))), ARG0), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, cos(protectedDiv(3.141592653589793, ARG0))), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, mul(ARG0, sub(3.141592653589793, ARG0))), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, cos(protectedDiv(3.141592653589793, ARG0))), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, mul(cos(protectedDiv(3.141592653589793, ARG0)), 3.141592653589793)), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, cos(protectedDiv(3.141592653589793, ARG0))), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, mul(ARG0, sub(3.141592653589793, ARG0))), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, cos(protectedDiv(3.141592653589793, ARG0))), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, mul(cos(protectedDiv(3.141592653589793, ARG0)), ARG0)), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, cos(protectedDiv(3.141592653589793, ARG0))), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, cos(protectedDiv(3.141592653589793, ARG0))), ARG0))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, cos(protectedDiv(3.141592653589793, ARG0))), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, mul(ARG0, sub(3.141592653589793, ARG0))), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, cos(protectedDiv(3.141592653589793, ARG0))), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, mul(ARG0, sub(3.141592653589793, ARG0))), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, cos(protectedDiv(3.141592653589793, ARG0))), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(3.141592653589793, sinX(add(sub(3.141592653589793, cos(protectedDiv(3.141592653589793, ARG0))), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, mul(3.141592653589793, sub(3.141592653589793, mul(3.141592653589793, ARG0)))), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, cos(protectedDiv(3.141592653589793, ARG0))), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(3.141592653589793, sinX(add(sub(3.141592653589793, ARG0), cos(protectedDiv(3.141592653589793, cos(protectedDiv(3.141592653589793, ARG0))))))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, cos(protectedDiv(3.141592653589793, ARG0))), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(ARG0, sinX(add(sub(3.141592653589793, cos(protectedDiv(3.141592653589793, ARG0))), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, mul(cos(protectedDiv(3.141592653589793, ARG0)), ARG0)), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, cos(protectedDiv(3.141592653589793, ARG0))), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(protectedDiv(3.141592653589793, cos(protectedDiv(3.141592653589793, ARG0))), ARG0), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, cos(protectedDiv(3.141592653589793, ARG0))), ARG0))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, cos(protectedDiv(3.141592653589793, ARG0))), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(3.141592653589793, sinX(add(sub(3.141592653589793, cos(protectedDiv(3.141592653589793, ARG0))), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, cos(protectedDiv(3.141592653589793, ARG0))), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, mul(ARG0, sub(3.141592653589793, ARG0))), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, cos(protectedDiv(3.141592653589793, ARG0))), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(3.141592653589793, sinX(add(sub(3.141592653589793, cos(protectedDiv(3.141592653589793, ARG0))), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, cos(protectedDiv(3.141592653589793, ARG0))), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, cos(protectedDiv(3.141592653589793, ARG0))), ARG0))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, mul(ARG0, sub(3.141592653589793, ARG0))), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, cos(protectedDiv(3.141592653589793, ARG0))), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(3.141592653589793, sinX(add(sub(protectedDiv(3.141592653589793, ARG0), ARG0), cos(protectedDiv(3.141592653589793, ARG0))))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, mul(cos(protectedDiv(3.141592653589793, ARG0)), ARG0)), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, cos(protectedDiv(3.141592653589793, ARG0))), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(-1, cos(protectedDiv(3.141592653589793, ARG0))), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, cos(protectedDiv(3.141592653589793, ARG0))), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, mul(cos(protectedDiv(3.141592653589793, ARG0)), ARG0)), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, cos(protectedDiv(3.141592653589793, ARG0))), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(3.141592653589793, sinX(add(sub(3.141592653589793, cos(protectedDiv(3.141592653589793, ARG0))), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, mul(ARG0, sub(3.141592653589793, mul(3.141592653589793, ARG0)))), 3.141592653589793))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(3.141592653589793, sinX(add(sub(3.141592653589793, ARG0), cos(protectedDiv(3.141592653589793, cos(protectedDiv(3.141592653589793, ARG0))))))))), ARG0))
+0.0000, 1.000000: 
+sinX(sub(neg(protectedDiv(3.141592653589793, protectedPow(-1, sinX(add(sub(3.141592653589793, cos(cos(protectedDiv(3.141592653589793, ARG0)))), 3.141592653589793))))), ARG0))
+
+0.0000, 1.000000 :
+    ⎛              ⎛     ⎛π⎞      ⎞  ⎞
+    ⎜         -sinX⎜- cos⎜─⎟ + 2⋅π⎟  ⎟
+    ⎜              ⎝     ⎝x⎠      ⎠  ⎟
+sinX⎝-x - (-1)                     ⋅π⎠
+0.0000, 1.000000 :
+    ⎛              ⎛       ⎛π⎞      ⎞  ⎞
+    ⎜         -sinX⎜- π⋅cos⎜─⎟ + 2⋅π⎟  ⎟
+    ⎜              ⎝       ⎝x⎠      ⎠  ⎟
+sinX⎝-x - (-1)                       ⋅π⎠
+0.0000, 1.000000 :
+    ⎛              ⎛     ⎛π⎞      ⎞  ⎞
+    ⎜         -sinX⎜- cos⎜─⎟ + 2⋅π⎟  ⎟
+    ⎜              ⎝     ⎝x⎠      ⎠  ⎟
+sinX⎝-x - (-1)                     ⋅π⎠
+0.0000, 1.000000 :
+    ⎛              ⎛           π   ⎞  ⎞
+    ⎜         -sinX⎜-x + π + ──────⎟  ⎟
+    ⎜              ⎜            ⎛π⎞⎟  ⎟
+    ⎜              ⎜         cos⎜─⎟⎟  ⎟
+    ⎜              ⎝            ⎝x⎠⎠  ⎟
+sinX⎝-x - (-1)                      ⋅π⎠
+0.0000, 1.000000 :
+    ⎛              ⎛     ⎛π⎞      ⎞  ⎞
+    ⎜         -sinX⎜- cos⎜─⎟ + 2⋅π⎟  ⎟
+    ⎜              ⎝     ⎝x⎠      ⎠  ⎟
+sinX⎝-x - (-1)                     ⋅π⎠
+0.0000, 1.000000 :
+    ⎛              ⎛       ⎛π⎞      ⎞  ⎞
+    ⎜         -sinX⎜- x⋅cos⎜─⎟ + 2⋅π⎟  ⎟
+    ⎜              ⎝       ⎝x⎠      ⎠  ⎟
+sinX⎝-x - (-1)                       ⋅π⎠
+0.0000, 1.000000 :
+    ⎛         -sinX(-x⋅(-x + π) + 2⋅π)  ⎞
+sinX⎝-x - (-1)                        ⋅π⎠
+0.0000, 1.000000 :
+    ⎛              ⎛       ⎛π⎞      ⎞  ⎞
+    ⎜         -sinX⎜- x⋅cos⎜─⎟ + 2⋅π⎟  ⎟
+    ⎜              ⎝       ⎝x⎠      ⎠  ⎟
+sinX⎝-x - (-1)                       ⋅π⎠
+0.0000, 1.000000 :
+    ⎛              ⎛     ⎛π⎞      ⎞  ⎞
+    ⎜         -sinX⎜- cos⎜─⎟ + 2⋅π⎟  ⎟
+    ⎜              ⎝     ⎝x⎠      ⎠  ⎟
+sinX⎝-x - (-1)                     ⋅π⎠
+0.0000, 1.000000 :
+    ⎛              ⎛       ⎛π⎞      ⎞  ⎞
+    ⎜         -sinX⎜- π⋅cos⎜─⎟ + 2⋅π⎟  ⎟
+    ⎜              ⎝       ⎝x⎠      ⎠  ⎟
+sinX⎝-x - (-1)                       ⋅π⎠
+0.0000, 1.000000 :
+    ⎛              ⎛     ⎛π⎞      ⎞  ⎞
+    ⎜         -sinX⎜- cos⎜─⎟ + 2⋅π⎟  ⎟
+    ⎜              ⎝     ⎝x⎠      ⎠  ⎟
+sinX⎝-x - (-1)                     ⋅π⎠
+0.0000, 1.000000 :
+    ⎛             ⎛        ⎛π⎞   π⎞⎞
+    ⎜        -sinX⎜-x + cos⎜─⎟ + ─⎟⎟
+    ⎜             ⎝        ⎝x⎠   x⎠⎟
+sinX⎝-x - π⋅π                      ⎠
+0.0000, 1.000000 :
+    ⎛              ⎛     ⎛π⎞      ⎞  ⎞
+    ⎜         -sinX⎜- cos⎜─⎟ + 2⋅π⎟  ⎟
+    ⎜              ⎝     ⎝x⎠      ⎠  ⎟
+sinX⎝-x - (-1)                     ⋅π⎠
+0.0000, 1.000000 :
+    ⎛              ⎛           π   ⎞  ⎞
+    ⎜         -sinX⎜-x + π + ──────⎟  ⎟
+    ⎜              ⎜            ⎛π⎞⎟  ⎟
+    ⎜              ⎜         cos⎜─⎟⎟  ⎟
+    ⎜              ⎝            ⎝x⎠⎠  ⎟
+sinX⎝-x - (-1)                      ⋅π⎠
+0.0000, 1.000000 :
+    ⎛              ⎛     ⎛π⎞      ⎞  ⎞
+    ⎜         -sinX⎜- cos⎜─⎟ + 2⋅π⎟  ⎟
+    ⎜              ⎝     ⎝x⎠      ⎠  ⎟
+sinX⎝-x - (-1)                     ⋅π⎠
+0.0000, 1.000000 :
+    ⎛              ⎛       ⎛π⎞    ⎞  ⎞
+    ⎜         -sinX⎜x - cos⎜─⎟ + π⎟  ⎟
+    ⎜              ⎝       ⎝x⎠    ⎠  ⎟
+sinX⎝-x - (-1)                     ⋅π⎠
+0.0000, 1.000000 :
+    ⎛         -sinX(-x⋅(-x + π) + 2⋅π)  ⎞
+sinX⎝-x - (-1)                        ⋅π⎠
+0.0000, 1.000000 :
+    ⎛              ⎛       ⎛π⎞      ⎞  ⎞
+    ⎜         -sinX⎜- x⋅cos⎜─⎟ + 2⋅π⎟  ⎟
+    ⎜              ⎝       ⎝x⎠      ⎠  ⎟
+sinX⎝-x - (-1)                       ⋅π⎠
+0.0000, 1.000000 :
+    ⎛              ⎛     ⎛π⎞      ⎞  ⎞
+    ⎜         -sinX⎜- cos⎜─⎟ + 2⋅π⎟  ⎟
+    ⎜              ⎝     ⎝x⎠      ⎠  ⎟
+sinX⎝-x - (-1)                     ⋅π⎠
+0.0000, 1.000000 :
+    ⎛              ⎛       ⎛π⎞      ⎞  ⎞
+    ⎜         -sinX⎜- x⋅cos⎜─⎟ + 2⋅π⎟  ⎟
+    ⎜              ⎝       ⎝x⎠      ⎠  ⎟
+sinX⎝-x - (-1)                       ⋅π⎠
+0.0000, 1.000000 :
+    ⎛              ⎛     ⎛π⎞      ⎞  ⎞
+    ⎜         -sinX⎜- cos⎜─⎟ + 2⋅π⎟  ⎟
+    ⎜              ⎝     ⎝x⎠      ⎠  ⎟
+sinX⎝-x - (-1)                     ⋅π⎠
+0.0000, 1.000000 :
+    ⎛         -sinX(-x⋅(-x + π) + 2⋅π)  ⎞
+sinX⎝-x - (-1)                        ⋅π⎠
+0.0000, 1.000000 :
+    ⎛              ⎛     ⎛π⎞      ⎞  ⎞
+    ⎜         -sinX⎜- cos⎜─⎟ + 2⋅π⎟  ⎟
+    ⎜              ⎝     ⎝x⎠      ⎠  ⎟
+sinX⎝-x - (-1)                     ⋅π⎠
+0.0000, 1.000000 :
+    ⎛         -sinX(-x⋅(-x + π) + 2⋅π)  ⎞
+sinX⎝-x - (-1)                        ⋅π⎠
+0.0000, 1.000000 :
+    ⎛              ⎛     ⎛π⎞      ⎞  ⎞
+    ⎜         -sinX⎜- cos⎜─⎟ + 2⋅π⎟  ⎟
+    ⎜              ⎝     ⎝x⎠      ⎠  ⎟
+sinX⎝-x - (-1)                     ⋅π⎠
+0.0000, 1.000000 :
+    ⎛              ⎛       ⎛π⎞      ⎞  ⎞
+    ⎜         -sinX⎜- x⋅cos⎜─⎟ + 2⋅π⎟  ⎟
+    ⎜              ⎝       ⎝x⎠      ⎠  ⎟
+sinX⎝-x - (-1)                       ⋅π⎠
+0.0000, 1.000000 :
+    ⎛              ⎛     ⎛π⎞      ⎞  ⎞
+    ⎜         -sinX⎜- cos⎜─⎟ + 2⋅π⎟  ⎟
+    ⎜              ⎝     ⎝x⎠      ⎠  ⎟
+sinX⎝-x - (-1)                     ⋅π⎠
+0.0000, 1.000000 :
+    ⎛              ⎛       ⎛π⎞    ⎞  ⎞
+    ⎜         -sinX⎜x - cos⎜─⎟ + π⎟  ⎟
+    ⎜              ⎝       ⎝x⎠    ⎠  ⎟
+sinX⎝-x - (-1)                     ⋅π⎠
+0.0000, 1.000000 :
+    ⎛              ⎛     ⎛π⎞      ⎞  ⎞
+    ⎜         -sinX⎜- cos⎜─⎟ + 2⋅π⎟  ⎟
+    ⎜              ⎝     ⎝x⎠      ⎠  ⎟
+sinX⎝-x - (-1)                     ⋅π⎠
+0.0000, 1.000000 :
+    ⎛              ⎛       ⎛π⎞      ⎞  ⎞
+    ⎜         -sinX⎜- x⋅cos⎜─⎟ + 2⋅π⎟  ⎟
+    ⎜              ⎝       ⎝x⎠      ⎠  ⎟
+sinX⎝-x - (-1)                       ⋅π⎠
+0.0000, 1.000000 :
+    ⎛              ⎛     ⎛π⎞      ⎞  ⎞
+    ⎜         -sinX⎜- cos⎜─⎟ + 2⋅π⎟  ⎟
+    ⎜              ⎝     ⎝x⎠      ⎠  ⎟
+sinX⎝-x - (-1)                     ⋅π⎠
+0.0000, 1.000000 :
+    ⎛         -sinX(-x⋅(-x + π) + 2⋅π)  ⎞
+sinX⎝-x - (-1)                        ⋅π⎠
+0.0000, 1.000000 :
+    ⎛              ⎛     ⎛π⎞   7⋅π⎞  ⎞
+    ⎜         -sinX⎜- cos⎜─⎟ + ───⎟  ⎟
+    ⎜              ⎝     ⎝x⎠    6 ⎠  ⎟
+sinX⎝-x - (-1)                     ⋅π⎠
+0.0000, 1.000000 :
+    ⎛              ⎛   ⎛     ⎛π⎞       ⎞⎞  ⎞
+    ⎜         -sinX⎜add⎜- cos⎜─⎟ + π, π⎟⎟  ⎟
+    ⎜              ⎝   ⎝     ⎝x⎠       ⎠⎠  ⎟
+sinX⎝-x + (-1)                           ⋅π⎠
+0.0000, 1.000000 :
+    ⎛              ⎛     ⎛π⎞      ⎞  ⎞
+    ⎜         -sinX⎜- cos⎜─⎟ + 2⋅π⎟  ⎟
+    ⎜              ⎝     ⎝x⎠      ⎠  ⎟
+sinX⎝-x - (-1)                     ⋅π⎠
+0.0000, 1.000000 :
+    ⎛              ⎛       ⎛π⎞      ⎞  ⎞
+    ⎜         -sinX⎜- x⋅cos⎜─⎟ + 2⋅π⎟  ⎟
+    ⎜              ⎝       ⎝x⎠      ⎠  ⎟
+sinX⎝-x - (-1)                       ⋅π⎠
+0.0000, 1.000000 :
+    ⎛         -sinX(-x⋅(-x + π) + 2⋅π)  ⎞
+sinX⎝-x - (-1)                        ⋅π⎠
+0.0000, 1.000000 :
+    ⎛              ⎛       ⎛π⎞      ⎞  ⎞
+    ⎜         -sinX⎜- π⋅cos⎜─⎟ + 2⋅π⎟  ⎟
+    ⎜              ⎝       ⎝x⎠      ⎠  ⎟
+sinX⎝-x - (-1)                       ⋅π⎠
+0.0000, 1.000000 :
+    ⎛              ⎛     ⎛π⎞      ⎞  ⎞
+    ⎜         -sinX⎜- cos⎜─⎟ + 2⋅π⎟  ⎟
+    ⎜              ⎝     ⎝x⎠      ⎠  ⎟
+sinX⎝-x - (-1)                     ⋅π⎠
+0.0000, 1.000000 :
+    ⎛             ⎛        ⎛π⎞   π⎞⎞
+    ⎜        -sinX⎜-x + cos⎜─⎟ + ─⎟⎟
+    ⎜             ⎝        ⎝x⎠   x⎠⎟
+sinX⎝-x - π⋅π                      ⎠
+0.0000, 1.000000 :
+    ⎛              ⎛        ⎛π⎞      ⎞  ⎞
+    ⎜         -sinX⎜-x - cos⎜─⎟ + 2⋅π⎟  ⎟
+    ⎜              ⎝        ⎝x⎠      ⎠  ⎟
+sinX⎝-x - (-1)                        ⋅π⎠
+0.0000, 1.000000 :
+    ⎛         -sinX(-x⋅(-π⋅x + π) + 2⋅π)  ⎞
+sinX⎝-x - (-1)                          ⋅π⎠
+0.0000, 1.000000 :
+    ⎛              ⎛     ⎛π⎞      ⎞  ⎞
+    ⎜         -sinX⎜- cos⎜─⎟ + 2⋅π⎟  ⎟
+    ⎜              ⎝     ⎝x⎠      ⎠  ⎟
+sinX⎝-x - (-1)                     ⋅π⎠
+0.0000, 1.000000 :
+    ⎛             ⎛     ⎛π⎞      ⎞⎞
+    ⎜        -sinX⎜- cos⎜─⎟ + 2⋅π⎟⎟
+    ⎜             ⎝     ⎝x⎠      ⎠⎟
+sinX⎝-x - π⋅π                     ⎠
+0.0000, 1.000000 :
+    ⎛              ⎛     ⎛π⎞      ⎞  ⎞
+    ⎜         -sinX⎜- cos⎜─⎟ + 2⋅π⎟  ⎟
+    ⎜              ⎝     ⎝x⎠      ⎠  ⎟
+sinX⎝-x - (-1)                     ⋅π⎠
+0.0000, 1.000000 :
+    ⎛              ⎛           π   ⎞  ⎞
+    ⎜         -sinX⎜-x + π + ──────⎟  ⎟
+    ⎜              ⎜            ⎛π⎞⎟  ⎟
+    ⎜              ⎜         cos⎜─⎟⎟  ⎟
+    ⎜              ⎝            ⎝x⎠⎠  ⎟
+sinX⎝-x - (-1)                      ⋅π⎠
+0.0000, 1.000000 :
+    ⎛             ⎛        ⎛π⎞   π⎞⎞
+    ⎜        -sinX⎜-x + cos⎜─⎟ + ─⎟⎟
+    ⎜             ⎝        ⎝x⎠   x⎠⎟
+sinX⎝-x - π⋅π                      ⎠
+0.0000, 1.000000 :
+    ⎛              ⎛     ⎛π⎞      ⎞  ⎞
+    ⎜         -sinX⎜- cos⎜─⎟ + 2⋅π⎟  ⎟
+    ⎜              ⎝     ⎝x⎠      ⎠  ⎟
+sinX⎝-x - (-1)                     ⋅π⎠
+0.0000, 1.000000 :
+    ⎛             ⎛     ⎛π⎞      ⎞⎞
+    ⎜        -sinX⎜- cos⎜─⎟ + 2⋅π⎟⎟
+    ⎜             ⎝     ⎝x⎠      ⎠⎟
+sinX⎝-x - π⋅π                     ⎠
+0.0000, 1.000000 :
+    ⎛              ⎛     ⎛π⎞      ⎞  ⎞
+    ⎜         -sinX⎜- cos⎜─⎟ + 2⋅π⎟  ⎟
+    ⎜              ⎝     ⎝x⎠      ⎠  ⎟
+sinX⎝-x - (-1)                     ⋅π⎠
+0.0000, 1.000000 :
+    ⎛             ⎛     ⎛π⎞      ⎞⎞
+    ⎜        -sinX⎜- cos⎜─⎟ + 2⋅π⎟⎟
+    ⎜             ⎝     ⎝x⎠      ⎠⎟
+sinX⎝-x - π⋅π                     ⎠
+0.0000, 1.000000 :
+    ⎛         -sinX(-x⋅(-x + π) + 2⋅π)  ⎞
+sinX⎝-x - (-1)                        ⋅π⎠
+0.0000, 1.000000 :
+    ⎛             ⎛        ⎛π⎞    ⎞⎞
+    ⎜        -sinX⎜-x + cos⎜─⎟ - π⎟⎟
+    ⎜             ⎝        ⎝x⎠    ⎠⎟
+sinX⎝-x - π⋅π                      ⎠
+0.0000, 1.000000 :
+    ⎛              ⎛     ⎛π⎞      ⎞  ⎞
+    ⎜         -sinX⎜- cos⎜─⎟ + 2⋅π⎟  ⎟
+    ⎜              ⎝     ⎝x⎠      ⎠  ⎟
+sinX⎝-x - (-1)                     ⋅π⎠
+0.0000, 1.000000 :
+    ⎛              ⎛           π   ⎞  ⎞
+    ⎜         -sinX⎜-x + π + ──────⎟  ⎟
+    ⎜              ⎜            ⎛π⎞⎟  ⎟
+    ⎜              ⎜         cos⎜─⎟⎟  ⎟
+    ⎜              ⎝            ⎝x⎠⎠  ⎟
+sinX⎝-x - (-1)                      ⋅π⎠
+0.0000, 1.000000 :
+    ⎛              ⎛     ⎛π⎞      ⎞  ⎞
+    ⎜         -sinX⎜- cos⎜─⎟ + 2⋅π⎟  ⎟
+    ⎜              ⎝     ⎝x⎠      ⎠  ⎟
+sinX⎝-x - (-1)                     ⋅π⎠
+0.0000, 1.000000 :
+    ⎛              ⎛     ⎛   ⎛π⎞⎞      ⎞  ⎞
+    ⎜         -sinX⎜- cos⎜cos⎜─⎟⎟ + 2⋅π⎟  ⎟
+    ⎜              ⎝     ⎝   ⎝x⎠⎠      ⎠  ⎟
+sinX⎝-x - (-1)                          ⋅π⎠
+0.0000, 1.000000 :
+    ⎛              ⎛     ⎛π⎞      ⎞  ⎞
+    ⎜         -sinX⎜- cos⎜─⎟ + 2⋅π⎟  ⎟
+    ⎜              ⎝     ⎝x⎠      ⎠  ⎟
+sinX⎝-x - (-1)                     ⋅π⎠
+0.0000, 1.000000 :
+    ⎛              ⎛        ⎛π⎞      ⎞  ⎞
+    ⎜         -sinX⎜-x - cos⎜─⎟ + 2⋅π⎟  ⎟
+    ⎜              ⎝        ⎝x⎠      ⎠  ⎟
+sinX⎝-x - (-1)                        ⋅π⎠
+0.0000, 1.000000 :
+    ⎛              ⎛     ⎛π⎞      ⎞  ⎞
+    ⎜         -sinX⎜- cos⎜─⎟ + 2⋅π⎟  ⎟
+    ⎜              ⎝     ⎝x⎠      ⎠  ⎟
+sinX⎝-x - (-1)                     ⋅π⎠
+0.0000, 1.000000 :
+    ⎛              ⎛       ⎛π⎞      ⎞  ⎞
+    ⎜         -sinX⎜- x⋅cos⎜─⎟ + 2⋅π⎟  ⎟
+    ⎜              ⎝       ⎝x⎠      ⎠  ⎟
+sinX⎝-x - (-1)                       ⋅π⎠
+0.0000, 1.000000 :
+    ⎛         -sinX(-x⋅(-π⋅x + π) + 2⋅π)  ⎞
+sinX⎝-x - (-1)                          ⋅π⎠
+0.0000, 1.000000 :
+    ⎛              ⎛     ⎛π⎞      ⎞  ⎞
+    ⎜         -sinX⎜- cos⎜─⎟ + 2⋅π⎟  ⎟
+    ⎜              ⎝     ⎝x⎠      ⎠  ⎟
+sinX⎝-x - (-1)                     ⋅π⎠
+0.0000, 1.000000 :
+    ⎛              ⎛     ⎛π⎞        ⎞  ⎞
+    ⎜         -sinX⎜- cos⎜─⎟ - 1 + π⎟  ⎟
+    ⎜              ⎝     ⎝x⎠        ⎠  ⎟
+sinX⎝-x - (-1)                       ⋅π⎠
+0.0000, 1.000000 :
+    ⎛              ⎛     ⎛π⎞      ⎞  ⎞
+    ⎜         -sinX⎜- cos⎜─⎟ + 2⋅π⎟  ⎟
+    ⎜              ⎝     ⎝x⎠      ⎠  ⎟
+sinX⎝-x - (-1)                     ⋅π⎠
+0.0000, 1.000000 :
+    ⎛              ⎛     ⎛π⎞       π⎞  ⎞
+    ⎜         -sinX⎜- cos⎜─⎟ + π + ─⎟  ⎟
+    ⎜              ⎝     ⎝x⎠       x⎠  ⎟
+sinX⎝-x - (-1)                       ⋅π⎠
+0.0000, 1.000000 :
+    ⎛              ⎛     ⎛π⎞      ⎞  ⎞
+    ⎜         -sinX⎜- cos⎜─⎟ + 2⋅π⎟  ⎟
+    ⎜              ⎝     ⎝x⎠      ⎠  ⎟
+sinX⎝-x - (-1)                     ⋅π⎠
+0.0000, 1.000000 :
+    ⎛         -sinX(-x⋅(-x + π) + 2⋅π)  ⎞
+sinX⎝-x - (-1)                        ⋅π⎠
+0.0000, 1.000000 :
+    ⎛              ⎛     ⎛π⎞      ⎞  ⎞
+    ⎜         -sinX⎜- cos⎜─⎟ + 2⋅π⎟  ⎟
+    ⎜              ⎝     ⎝x⎠      ⎠  ⎟
+sinX⎝-x - (-1)                     ⋅π⎠
+0.0000, 1.000000 :
+    ⎛              ⎛       ⎛π⎞      ⎞  ⎞
+    ⎜         -sinX⎜- π⋅cos⎜─⎟ + 2⋅π⎟  ⎟
+    ⎜              ⎝       ⎝x⎠      ⎠  ⎟
+sinX⎝-x - (-1)                       ⋅π⎠
+0.0000, 1.000000 :
+    ⎛              ⎛     ⎛π⎞      ⎞  ⎞
+    ⎜         -sinX⎜- cos⎜─⎟ + 2⋅π⎟  ⎟
+    ⎜              ⎝     ⎝x⎠      ⎠  ⎟
+sinX⎝-x - (-1)                     ⋅π⎠
+0.0000, 1.000000 :
+    ⎛         -sinX(-x⋅(-x + π) + 2⋅π)  ⎞
+sinX⎝-x - (-1)                        ⋅π⎠
+0.0000, 1.000000 :
+    ⎛              ⎛   ⎛     ⎛π⎞       ⎞⎞  ⎞
+    ⎜         -sinX⎜add⎜- cos⎜─⎟ + π, π⎟⎟  ⎟
+    ⎜              ⎝   ⎝     ⎝x⎠       ⎠⎠  ⎟
+sinX⎝-x + (-1)                           ⋅π⎠
+0.0000, 1.000000 :
+    ⎛              ⎛     ⎛π⎞       π⎞  ⎞
+    ⎜         -sinX⎜- cos⎜─⎟ + π + ─⎟  ⎟
+    ⎜              ⎝     ⎝x⎠       x⎠  ⎟
+sinX⎝-x - (-1)                       ⋅π⎠
+0.0000, 1.000000 :
+    ⎛         -sinX(-x⋅(-x + π) + 2⋅π)  ⎞
+sinX⎝-x - (-1)                        ⋅π⎠
+0.0000, 1.000000 :
+    ⎛              ⎛     ⎛π⎞      ⎞  ⎞
+    ⎜         -sinX⎜- cos⎜─⎟ + 2⋅π⎟  ⎟
+    ⎜              ⎝     ⎝x⎠      ⎠  ⎟
+sinX⎝-x - (-1)                     ⋅π⎠
+0.0000, 1.000000 :
+    ⎛              ⎛       ⎛π⎞      ⎞  ⎞
+    ⎜         -sinX⎜- x⋅cos⎜─⎟ + 2⋅π⎟  ⎟
+    ⎜              ⎝       ⎝x⎠      ⎠  ⎟
+sinX⎝-x - (-1)                       ⋅π⎠
+0.0000, 1.000000 :
+    ⎛              ⎛     ⎛π⎞      ⎞  ⎞
+    ⎜         -sinX⎜- cos⎜─⎟ + 2⋅π⎟  ⎟
+    ⎜              ⎝     ⎝x⎠      ⎠  ⎟
+sinX⎝-x - (-1)                     ⋅π⎠
+0.0000, 1.000000 :
+    ⎛              ⎛           π   ⎞  ⎞
+    ⎜         -sinX⎜-x + π + ──────⎟  ⎟
+    ⎜              ⎜            ⎛π⎞⎟  ⎟
+    ⎜              ⎜         cos⎜─⎟⎟  ⎟
+    ⎜              ⎝            ⎝x⎠⎠  ⎟
+sinX⎝-x - (-1)                      ⋅π⎠
+0.0000, 1.000000 :
+    ⎛              ⎛     ⎛π⎞      ⎞  ⎞
+    ⎜         -sinX⎜- cos⎜─⎟ + 2⋅π⎟  ⎟
+    ⎜              ⎝     ⎝x⎠      ⎠  ⎟
+sinX⎝-x - (-1)                     ⋅π⎠
+0.0000, 1.000000 :
+    ⎛         -sinX(-x⋅(-x + π) + 2⋅π)  ⎞
+sinX⎝-x - (-1)                        ⋅π⎠
+0.0000, 1.000000 :
+    ⎛              ⎛     ⎛π⎞      ⎞  ⎞
+    ⎜         -sinX⎜- cos⎜─⎟ + 2⋅π⎟  ⎟
+    ⎜              ⎝     ⎝x⎠      ⎠  ⎟
+sinX⎝-x - (-1)                     ⋅π⎠
+0.0000, 1.000000 :
+    ⎛              ⎛       ⎛π⎞    ⎞  ⎞
+    ⎜         -sinX⎜x - cos⎜─⎟ + π⎟  ⎟
+    ⎜              ⎝       ⎝x⎠    ⎠  ⎟
+sinX⎝-x - (-1)                     ⋅π⎠
+0.0000, 1.000000 :
+    ⎛              ⎛     ⎛π⎞      ⎞  ⎞
+    ⎜         -sinX⎜- cos⎜─⎟ + 2⋅π⎟  ⎟
+    ⎜              ⎝     ⎝x⎠      ⎠  ⎟
+sinX⎝-x - (-1)                     ⋅π⎠
+0.0000, 1.000000 :
+    ⎛         -sinX(-x⋅(-π⋅x + π) + 2⋅π)  ⎞
+sinX⎝-x - (-1)                          ⋅π⎠
+0.0000, 1.000000 :
+    ⎛              ⎛     ⎛π⎞      ⎞  ⎞
+    ⎜         -sinX⎜- cos⎜─⎟ + 2⋅π⎟  ⎟
+    ⎜              ⎝     ⎝x⎠      ⎠  ⎟
+sinX⎝-x - (-1)                     ⋅π⎠
+0.0000, 1.000000 :
+    ⎛             ⎛        ⎛  π  ⎞    ⎞⎞
+    ⎜        -sinX⎜-x + cos⎜─────⎟ + π⎟⎟
+    ⎜             ⎝        ⎝π + 5⎠    ⎠⎟
+sinX⎝-x - π⋅π                          ⎠
+0.0000, 1.000000 :
+    ⎛              ⎛   ⎛     ⎛π⎞       ⎞⎞  ⎞
+    ⎜         -sinX⎜add⎜- cos⎜─⎟ + π, π⎟⎟  ⎟
+    ⎜              ⎝   ⎝     ⎝x⎠       ⎠⎠  ⎟
+sinX⎝-x + (-1)                           ⋅π⎠
+0.0000, 1.000000 :
+    ⎛              ⎛     ⎛π⎞      ⎞  ⎞
+    ⎜         -sinX⎜- cos⎜─⎟ + 2⋅π⎟  ⎟
+    ⎜              ⎝     ⎝x⎠      ⎠  ⎟
+sinX⎝-x - (-1)                     ⋅π⎠
+0.0000, 1.000000 :
+    ⎛              ⎛       ⎛π⎞      ⎞  ⎞
+    ⎜         -sinX⎜- x⋅cos⎜─⎟ + 2⋅π⎟  ⎟
+    ⎜              ⎝       ⎝x⎠      ⎠  ⎟
+sinX⎝-x - (-1)                       ⋅π⎠
+0.0000, 1.000000 :
+    ⎛              ⎛     ⎛π⎞      ⎞  ⎞
+    ⎜         -sinX⎜- cos⎜─⎟ + 2⋅π⎟  ⎟
+    ⎜              ⎝     ⎝x⎠      ⎠  ⎟
+sinX⎝-x - (-1)                     ⋅π⎠
+0.0000, 1.000000 :
+    ⎛         -sinX(-x⋅(-x + π) + 2⋅π)  ⎞
+sinX⎝-x - (-1)                        ⋅π⎠
+0.0000, 1.000000 :
+    ⎛              ⎛     ⎛π⎞      ⎞  ⎞
+    ⎜         -sinX⎜- cos⎜─⎟ + 2⋅π⎟  ⎟
+    ⎜              ⎝     ⎝x⎠      ⎠  ⎟
+sinX⎝-x - (-1)                     ⋅π⎠
+0.0000, 1.000000 :
+    ⎛              ⎛       ⎛π⎞      ⎞  ⎞
+    ⎜         -sinX⎜- π⋅cos⎜─⎟ + 2⋅π⎟  ⎟
+    ⎜              ⎝       ⎝x⎠      ⎠  ⎟
+sinX⎝-x - (-1)                       ⋅π⎠
+0.0000, 1.000000 :
+    ⎛              ⎛       ⎛π⎞      ⎞  ⎞
+    ⎜         -sinX⎜- x⋅cos⎜─⎟ + 2⋅π⎟  ⎟
+    ⎜              ⎝       ⎝x⎠      ⎠  ⎟
+sinX⎝-x - (-1)                       ⋅π⎠
+0.0000, 1.000000 :
+    ⎛              ⎛           π   ⎞  ⎞
+    ⎜         -sinX⎜-x + π + ──────⎟  ⎟
+    ⎜              ⎜            ⎛π⎞⎟  ⎟
+    ⎜              ⎜         cos⎜─⎟⎟  ⎟
+    ⎜              ⎝            ⎝x⎠⎠  ⎟
+sinX⎝-x - (-1)                      ⋅π⎠
+0.0000, 1.000000 :
+    ⎛              ⎛     ⎛π⎞      ⎞  ⎞
+    ⎜         -sinX⎜- cos⎜─⎟ + 2⋅π⎟  ⎟
+    ⎜              ⎝     ⎝x⎠      ⎠  ⎟
+sinX⎝-x - (-1)                     ⋅π⎠
+0.0000, 1.000000 :
+    ⎛              ⎛           π   ⎞  ⎞
+    ⎜         -sinX⎜-x + π + ──────⎟  ⎟
+    ⎜              ⎜            ⎛π⎞⎟  ⎟
+    ⎜              ⎜         cos⎜─⎟⎟  ⎟
+    ⎜              ⎝            ⎝x⎠⎠  ⎟
+sinX⎝-x - (-1)                      ⋅π⎠
+0.0000, 1.000000 :
+    ⎛              ⎛     ⎛π⎞      ⎞  ⎞
+    ⎜         -sinX⎜- cos⎜─⎟ + 2⋅π⎟  ⎟
+    ⎜              ⎝     ⎝x⎠      ⎠  ⎟
+sinX⎝-x - (-1)                     ⋅π⎠
+0.0000, 1.000000 :
+    ⎛         -sinX(-x⋅(-x + π) + 2⋅π)  ⎞
+sinX⎝-x - (-1)                        ⋅π⎠
+0.0000, 1.000000 :
+    ⎛              ⎛     ⎛π⎞      ⎞  ⎞
+    ⎜         -sinX⎜- cos⎜─⎟ + 2⋅π⎟  ⎟
+    ⎜              ⎝     ⎝x⎠      ⎠  ⎟
+sinX⎝-x - (-1)                     ⋅π⎠
+0.0000, 1.000000 :
+    ⎛              ⎛       ⎛π⎞      ⎞  ⎞
+    ⎜         -sinX⎜- π⋅cos⎜─⎟ + 2⋅π⎟  ⎟
+    ⎜              ⎝       ⎝x⎠      ⎠  ⎟
+sinX⎝-x - (-1)                       ⋅π⎠
+0.0000, 1.000000 :
+    ⎛              ⎛     ⎛π⎞      ⎞  ⎞
+    ⎜         -sinX⎜- cos⎜─⎟ + 2⋅π⎟  ⎟
+    ⎜              ⎝     ⎝x⎠      ⎠  ⎟
+sinX⎝-x - (-1)                     ⋅π⎠
+0.0000, 1.000000 :
+    ⎛         -sinX(-x⋅(-x + π) + 2⋅π)  ⎞
+sinX⎝-x - (-1)                        ⋅π⎠
+0.0000, 1.000000 :
+    ⎛              ⎛     ⎛π⎞      ⎞  ⎞
+    ⎜         -sinX⎜- cos⎜─⎟ + 2⋅π⎟  ⎟
+    ⎜              ⎝     ⎝x⎠      ⎠  ⎟
+sinX⎝-x - (-1)                     ⋅π⎠
+0.0000, 1.000000 :
+    ⎛              ⎛       ⎛π⎞      ⎞  ⎞
+    ⎜         -sinX⎜- x⋅cos⎜─⎟ + 2⋅π⎟  ⎟
+    ⎜              ⎝       ⎝x⎠      ⎠  ⎟
+sinX⎝-x - (-1)                       ⋅π⎠
+0.0000, 1.000000 :
+    ⎛              ⎛     ⎛π⎞      ⎞  ⎞
+    ⎜         -sinX⎜- cos⎜─⎟ + 2⋅π⎟  ⎟
+    ⎜              ⎝     ⎝x⎠      ⎠  ⎟
+sinX⎝-x - (-1)                     ⋅π⎠
+0.0000, 1.000000 :
+    ⎛              ⎛       ⎛π⎞    ⎞  ⎞
+    ⎜         -sinX⎜x - cos⎜─⎟ + π⎟  ⎟
+    ⎜              ⎝       ⎝x⎠    ⎠  ⎟
+sinX⎝-x - (-1)                     ⋅π⎠
+0.0000, 1.000000 :
+    ⎛              ⎛     ⎛π⎞      ⎞  ⎞
+    ⎜         -sinX⎜- cos⎜─⎟ + 2⋅π⎟  ⎟
+    ⎜              ⎝     ⎝x⎠      ⎠  ⎟
+sinX⎝-x - (-1)                     ⋅π⎠
+0.0000, 1.000000 :
+    ⎛         -sinX(-x⋅(-x + π) + 2⋅π)  ⎞
+sinX⎝-x - (-1)                        ⋅π⎠
+0.0000, 1.000000 :
+    ⎛              ⎛     ⎛π⎞      ⎞  ⎞
+    ⎜         -sinX⎜- cos⎜─⎟ + 2⋅π⎟  ⎟
+    ⎜              ⎝     ⎝x⎠      ⎠  ⎟
+sinX⎝-x - (-1)                     ⋅π⎠
+0.0000, 1.000000 :
+    ⎛         -sinX(-x⋅(-x + π) + 2⋅π)  ⎞
+sinX⎝-x - (-1)                        ⋅π⎠
+0.0000, 1.000000 :
+    ⎛              ⎛     ⎛π⎞      ⎞  ⎞
+    ⎜         -sinX⎜- cos⎜─⎟ + 2⋅π⎟  ⎟
+    ⎜              ⎝     ⎝x⎠      ⎠  ⎟
+sinX⎝-x - (-1)                     ⋅π⎠
+0.0000, 1.000000 :
+    ⎛             ⎛     ⎛π⎞      ⎞⎞
+    ⎜        -sinX⎜- cos⎜─⎟ + 2⋅π⎟⎟
+    ⎜             ⎝     ⎝x⎠      ⎠⎟
+sinX⎝-x - π⋅π                     ⎠
+0.0000, 1.000000 :
+    ⎛         -sinX(-π⋅(-π⋅x + π) + 2⋅π)  ⎞
+sinX⎝-x - (-1)                          ⋅π⎠
+0.0000, 1.000000 :
+    ⎛              ⎛     ⎛π⎞      ⎞  ⎞
+    ⎜         -sinX⎜- cos⎜─⎟ + 2⋅π⎟  ⎟
+    ⎜              ⎝     ⎝x⎠      ⎠  ⎟
+sinX⎝-x - (-1)                     ⋅π⎠
+0.0000, 1.000000 :
+    ⎛             ⎛        ⎛  π   ⎞    ⎞⎞
+    ⎜        -sinX⎜-x + cos⎜──────⎟ + π⎟⎟
+    ⎜             ⎜        ⎜   ⎛π⎞⎟    ⎟⎟
+    ⎜             ⎜        ⎜cos⎜─⎟⎟    ⎟⎟
+    ⎜             ⎝        ⎝   ⎝x⎠⎠    ⎠⎟
+sinX⎝-x - π⋅π                           ⎠
+0.0000, 1.000000 :
+    ⎛              ⎛     ⎛π⎞      ⎞  ⎞
+    ⎜         -sinX⎜- cos⎜─⎟ + 2⋅π⎟  ⎟
+    ⎜              ⎝     ⎝x⎠      ⎠  ⎟
+sinX⎝-x - (-1)                     ⋅π⎠
+0.0000, 1.000000 :
+    ⎛             ⎛     ⎛π⎞      ⎞⎞
+    ⎜        -sinX⎜- cos⎜─⎟ + 2⋅π⎟⎟
+    ⎜             ⎝     ⎝x⎠      ⎠⎟
+sinX⎝-x - π⋅x                     ⎠
+0.0000, 1.000000 :
+    ⎛              ⎛       ⎛π⎞      ⎞  ⎞
+    ⎜         -sinX⎜- x⋅cos⎜─⎟ + 2⋅π⎟  ⎟
+    ⎜              ⎝       ⎝x⎠      ⎠  ⎟
+sinX⎝-x - (-1)                       ⋅π⎠
+0.0000, 1.000000 :
+    ⎛              ⎛     ⎛π⎞      ⎞  ⎞
+    ⎜         -sinX⎜- cos⎜─⎟ + 2⋅π⎟  ⎟
+    ⎜              ⎝     ⎝x⎠      ⎠  ⎟
+sinX⎝-x - (-1)                     ⋅π⎠
+0.0000, 1.000000 :
+    ⎛              ⎛           π   ⎞  ⎞
+    ⎜         -sinX⎜-x + π + ──────⎟  ⎟
+    ⎜              ⎜            ⎛π⎞⎟  ⎟
+    ⎜              ⎜         cos⎜─⎟⎟  ⎟
+    ⎜              ⎝            ⎝x⎠⎠  ⎟
+sinX⎝-x - (-1)                      ⋅π⎠
+0.0000, 1.000000 :
+    ⎛              ⎛       ⎛π⎞    ⎞  ⎞
+    ⎜         -sinX⎜x - cos⎜─⎟ + π⎟  ⎟
+    ⎜              ⎝       ⎝x⎠    ⎠  ⎟
+sinX⎝-x - (-1)                     ⋅π⎠
+0.0000, 1.000000 :
+    ⎛              ⎛     ⎛π⎞      ⎞  ⎞
+    ⎜         -sinX⎜- cos⎜─⎟ + 2⋅π⎟  ⎟
+    ⎜              ⎝     ⎝x⎠      ⎠  ⎟
+sinX⎝-x - (-1)                     ⋅π⎠
+0.0000, 1.000000 :
+    ⎛             ⎛     ⎛π⎞      ⎞⎞
+    ⎜        -sinX⎜- cos⎜─⎟ + 2⋅π⎟⎟
+    ⎜             ⎝     ⎝x⎠      ⎠⎟
+sinX⎝-x - π⋅π                     ⎠
+0.0000, 1.000000 :
+    ⎛              ⎛     ⎛π⎞      ⎞  ⎞
+    ⎜         -sinX⎜- cos⎜─⎟ + 2⋅π⎟  ⎟
+    ⎜              ⎝     ⎝x⎠      ⎠  ⎟
+sinX⎝-x - (-1)                     ⋅π⎠
+0.0000, 1.000000 :
+    ⎛         -sinX(-x⋅(-x + π) + 2⋅π)  ⎞
+sinX⎝-x - (-1)                        ⋅π⎠
+0.0000, 1.000000 :
+    ⎛              ⎛     ⎛π⎞      ⎞  ⎞
+    ⎜         -sinX⎜- cos⎜─⎟ + 2⋅π⎟  ⎟
+    ⎜              ⎝     ⎝x⎠      ⎠  ⎟
+sinX⎝-x - (-1)                     ⋅π⎠
+0.0000, 1.000000 :
+    ⎛             ⎛     ⎛π⎞      ⎞⎞
+    ⎜        -sinX⎜- cos⎜─⎟ + 2⋅π⎟⎟
+    ⎜             ⎝     ⎝x⎠      ⎠⎟
+sinX⎝-x - π⋅π                     ⎠
+0.0000, 1.000000 :
+    ⎛              ⎛     ⎛π⎞      ⎞  ⎞
+    ⎜         -sinX⎜- cos⎜─⎟ + 2⋅π⎟  ⎟
+    ⎜              ⎝     ⎝x⎠      ⎠  ⎟
+sinX⎝-x - (-1)                     ⋅π⎠
+0.0000, 1.000000 :
+    ⎛              ⎛       ⎛π⎞    ⎞  ⎞
+    ⎜         -sinX⎜x - cos⎜─⎟ + π⎟  ⎟
+    ⎜              ⎝       ⎝x⎠    ⎠  ⎟
+sinX⎝-x - (-1)                     ⋅π⎠
+0.0000, 1.000000 :
+    ⎛         -sinX(-x⋅(-x + π) + 2⋅π)  ⎞
+sinX⎝-x - (-1)                        ⋅π⎠
+0.0000, 1.000000 :
+    ⎛              ⎛     ⎛π⎞      ⎞  ⎞
+    ⎜         -sinX⎜- cos⎜─⎟ + 2⋅π⎟  ⎟
+    ⎜              ⎝     ⎝x⎠      ⎠  ⎟
+sinX⎝-x - (-1)                     ⋅π⎠
+0.0000, 1.000000 :
+    ⎛             ⎛        ⎛π⎞   π⎞⎞
+    ⎜        -sinX⎜-x + cos⎜─⎟ + ─⎟⎟
+    ⎜             ⎝        ⎝x⎠   x⎠⎟
+sinX⎝-x - π⋅π                      ⎠
+0.0000, 1.000000 :
+    ⎛              ⎛       ⎛π⎞      ⎞  ⎞
+    ⎜         -sinX⎜- x⋅cos⎜─⎟ + 2⋅π⎟  ⎟
+    ⎜              ⎝       ⎝x⎠      ⎠  ⎟
+sinX⎝-x - (-1)                       ⋅π⎠
+0.0000, 1.000000 :
+    ⎛              ⎛     ⎛π⎞      ⎞  ⎞
+    ⎜         -sinX⎜- cos⎜─⎟ + 2⋅π⎟  ⎟
+    ⎜              ⎝     ⎝x⎠      ⎠  ⎟
+sinX⎝-x - (-1)                     ⋅π⎠
+0.0000, 1.000000 :
+    ⎛              ⎛     ⎛π⎞        ⎞  ⎞
+    ⎜         -sinX⎜- cos⎜─⎟ - 1 + π⎟  ⎟
+    ⎜              ⎝     ⎝x⎠        ⎠  ⎟
+sinX⎝-x - (-1)                       ⋅π⎠
+0.0000, 1.000000 :
+    ⎛              ⎛     ⎛π⎞      ⎞  ⎞
+    ⎜         -sinX⎜- cos⎜─⎟ + 2⋅π⎟  ⎟
+    ⎜              ⎝     ⎝x⎠      ⎠  ⎟
+sinX⎝-x - (-1)                     ⋅π⎠
+0.0000, 1.000000 :
+    ⎛              ⎛       ⎛π⎞      ⎞  ⎞
+    ⎜         -sinX⎜- x⋅cos⎜─⎟ + 2⋅π⎟  ⎟
+    ⎜              ⎝       ⎝x⎠      ⎠  ⎟
+sinX⎝-x - (-1)                       ⋅π⎠
+0.0000, 1.000000 :
+    ⎛              ⎛     ⎛π⎞      ⎞  ⎞
+    ⎜         -sinX⎜- cos⎜─⎟ + 2⋅π⎟  ⎟
+    ⎜              ⎝     ⎝x⎠      ⎠  ⎟
+sinX⎝-x - (-1)                     ⋅π⎠
+0.0000, 1.000000 :
+    ⎛             ⎛     ⎛π⎞      ⎞⎞
+    ⎜        -sinX⎜- cos⎜─⎟ + 2⋅π⎟⎟
+    ⎜             ⎝     ⎝x⎠      ⎠⎟
+sinX⎝-x - π⋅π                     ⎠
+0.0000, 1.000000 :
+    ⎛         -sinX(-x⋅(-π⋅x + π) + 2⋅π)  ⎞
+sinX⎝-x - (-1)                          ⋅π⎠
+0.0000, 1.000000 :
+    ⎛             ⎛        ⎛  π   ⎞    ⎞⎞
+    ⎜        -sinX⎜-x + cos⎜──────⎟ + π⎟⎟
+    ⎜             ⎜        ⎜   ⎛π⎞⎟    ⎟⎟
+    ⎜             ⎜        ⎜cos⎜─⎟⎟    ⎟⎟
+    ⎜             ⎝        ⎝   ⎝x⎠⎠    ⎠⎟
+sinX⎝-x - π⋅π                           ⎠
+0.0000, 1.000000 :
+    ⎛              ⎛     ⎛   ⎛π⎞⎞      ⎞  ⎞
+    ⎜         -sinX⎜- cos⎜cos⎜─⎟⎟ + 2⋅π⎟  ⎟
+    ⎜              ⎝     ⎝   ⎝x⎠⎠      ⎠  ⎟
+sinX⎝-x - (-1)                          ⋅π⎠
+

@@ -24,7 +24,7 @@ def get_toolbox(target_func):
 
 	mse_fitness_weight = -1.0
 	#symbolic_equivalence_fitness_weight = 2.0
-	symbolic_equivalence_fitness_weight = 2.0
+	symbolic_equivalence_fitness_weight = 1.0
 	weights = (mse_fitness_weight, symbolic_equivalence_fitness_weight)
 
 	# define the general form of an individual
@@ -38,15 +38,15 @@ def get_toolbox(target_func):
 	toolbox.register("population", tools.initRepeat, list, toolbox.individual)
 	toolbox.register("compile", gp.compile, pset=pset)
 
-	eval_range = [x/10. * math.pi for x in range(-10,10)] + [x for x in range(-10, 10)]
+	eval_range = [x/20. * math.pi for x in range(-20,20)] + [x for x in range(-20, 20)]
 	# toolbox.register("evaluate", evalSymbReg, points=eval_range, toolbox=toolbox)
 	# toolbox.register("evaluate", evalSimplicity, target_func=target_func)
 	toolbox.register("evaluate", get_fitness, target_func=target_func, toolbox=toolbox, points=eval_range)
 
 	
 	# add filters for unwanted behaviour
-	for filter_ in filters:
-		toolbox.decorate('evaluate', tools.DeltaPenalty(filter_, 1000.))
+	#for filter_ in filters:
+	#	toolbox.decorate('evaluate', tools.DeltaPenalty(filter_, 1000.))
 	
 	toolbox.register("select", tools.selNSGA2)
 	# toolbox.register("select", tools.selTournament, tournsize=3)
