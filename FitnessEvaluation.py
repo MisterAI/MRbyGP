@@ -1,29 +1,86 @@
 import math
-import cmath
+#import cmath
 import ast
 import astor
 import re
 import sympy
 from sympy.abc import x, pi
 import zss
-import stringdist
+#import stringdist
 import sys
 
 
 def evalSymbReg(individual, points, toolbox):
 	# Transform the tree expression in a callable function
 	func = toolbox.compile(expr=individual)
-	#print(str(individual))
+	print(str(individual))
 	# Evaluate the mean squared error between the expression
 	# and the function to analyse
+
+	# Check whether there is nested pow, like pow(pow(x,2)) or pow(x,pow(2,10))
+	ind_str = str(individual)
+	#ind_str = 'sinX(add(neg(protectedPow(ARG0, protectedDiv(ARG0, add(neg(protectedPow(ARG0, sub(3.141592653589793, ARG0))), 3.141592653589793)))), ARG0))'
+
+	my_ast = ast.parse(ind_str)
+
+	checkPow = CheckNestedPow()
+	checkPow.visit(my_ast)
+
+	nestedPowFlag = checkPow.getPowCount()
+	nestedTriFlag = checkPow.getTriCount()
+
+	#print(nestedPowFlag)
+
+	if nestedPowFlag or nestedTriFlag:
+		#print(str(individual))
+		print("NESTED")
+		avg_error = sys.float_info.max / len(points) #9999999.
+		return 1- math.pow(1.16, -avg_error)
+
 	try:
+		#print("CALCULATION")
 		sqerrors = ((func(x) - individual.target_func(x))**2 for x in points)
 		avg_error = math.fsum(sqerrors) / len(points)
 		return 1 - math.pow(1.16, -avg_error)
 
-	except OverflowError:
-		avg_error = sys.float_info.max / len(points)
+	except Exception:
+		print("Exception")
+		avg_error = sys.float_info.max / len(points) #9999999.
 		return 1 - math.pow(1.16, -avg_error)
+
+
+class CheckNestedPow(ast.NodeVisitor):
+
+	def __init__(self):
+		self.powCount = 0
+		self.trigonometricCount = 0
+
+	def visit_Call(self, node):
+		self.generic_visit(node)
+		
+		if node.func.id == 'protectedPow':
+			self.powCount += 1
+			#print("pow func" + str(self.powCount))
+			
+		elif node.func.id == 'sinX' or node.func.id == 'cos':
+			self.trigonometricCount += 1
+
+		#print(self.powCount)
+		return node
+		#print(self.powCount)
+
+	def getPowCount(self):
+		if self.powCount >= 2:
+			return True
+		else:
+			return False
+
+	def getTriCount(self):
+		if self.trigonometricCount > 3:
+			return True
+		else:
+			return False
+
 
 
 class ReplaceDiv(ast.NodeTransformer):
@@ -161,12 +218,16 @@ def evalSimplicity(individual, target_func):
 	expr = convert_to_sympy_expr(individual)
 
 	# Test for string distance with levenshtein algorithm
-	#sdist = stringdist.levenshtein(sympy.srepr(expr), 'sinX(x)')
+	#sdist = stringdist.levenshtein(str(individual), 'sinX(ARG0)')
 	#print(sdist)
 
 	# Tree edit distance from Zhang-Shasha repository
 	dist = zss.simple_distance(expr, sympy.sympify('sinX(x)'), get_children, get_label, strdist)
 	
+	#print("string distance: " + str(sdist))
+	#print("tree edit distance: " + str(dist))
+	#print("distance difference " + str(sdist - dist))
+
 	return 1 - math.pow(1.016, -dist)
 	# return -dist
 

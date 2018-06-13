@@ -1,0 +1,110 @@
+Consumed time: 01 09:05:36
+0.0000, 0.878902: 
+sub(protectedPow(mul(ARG0, 0), protectedDiv(sub(3.141592653589793, neg(sinX(neg(ARG0)))), 0)), sinX(neg(ARG0)))
+0.0000, 0.878902: 
+sub(protectedPow(mul(ARG0, 0), protectedDiv(neg(sub(-1, sinX(neg(ARG0)))), 0)), sinX(neg(ARG0)))
+0.0000, 0.893344: 
+sub(protectedPow(mul(ARG0, 0), protectedDiv(cos(protectedDiv(-7, ARG0)), 0)), sinX(neg(ARG0)))
+0.0000, 0.906063: 
+sub(protectedPow(mul(ARG0, 0), protectedDiv(neg(sub(cos(sub(9, 3.141592653589793)), sinX(neg(ARG0)))), 0)), sinX(neg(ARG0)))
+0.0010, 0.910431: 
+neg(mul(sub(neg(cos(sinX(neg(ARG0)))), sinX(protectedPow(3.141592653589793, -1))), sinX(ARG0)))
+0.0000, 0.927132: 
+sub(protectedPow(mul(ARG0, 0), protectedDiv(neg(sub(ARG0, sinX(neg(ARG0)))), 0)), sinX(neg(ARG0)))
+0.0000, 0.931615: 
+sub(protectedPow(mul(ARG0, 0), protectedDiv(protectedDiv(sub(ARG0, 7), add(ARG0, sub(ARG0, 7))), 0)), sinX(neg(ARG0)))
+0.0000, 0.931615: 
+sub(protectedPow(mul(ARG0, 0), protectedDiv(protectedDiv(sub(ARG0, 7), add(ARG0, neg(3.141592653589793))), 0)), sinX(neg(ARG0)))
+0.0000, 0.931615: 
+sub(protectedPow(mul(ARG0, 0), protectedDiv(protectedDiv(sub(ARG0, 7), add(ARG0, sub(ARG0, 7))), 0)), sinX(neg(ARG0)))
+0.0000, 0.970044: 
+sub(protectedPow(mul(ARG0, 0), protectedDiv(sub(sub(-1, ARG0), sinX(sinX(2))), 0)), sinX(add(ARG0, 3.141592653589793)))
+0.0000, 0.989153: 
+sub(protectedPow(mul(ARG0, 0), protectedDiv(sub(sub(-1, ARG0), sinX(neg(ARG0))), 0)), sinX(add(ARG0, 3.141592653589793)))
+0.0000, 0.990447: 
+sub(protectedPow(mul(ARG0, 0), protectedDiv(neg(sub(ARG0, sinX(neg(protectedDiv(-7, ARG0))))), 0)), sinX(neg(ARG0)))
+0.0010, 0.998461: 
+neg(mul(sub(neg(cos(sinX(neg(add(ARG0, 3.141592653589793))))), sinX(protectedPow(3.141592653589793, -1))), sinX(ARG0)))
+0.0000, 0.999028: 
+sub(protectedPow(mul(sinX(10), 0), protectedDiv(sub(3.141592653589793, cos(sinX(neg(ARG0)))), 0)), sinX(neg(ARG0)))
+0.0000, 0.999397: 
+sub(sinX(protectedPow(3.141592653589793, sub(sub(protectedDiv(sub(3.141592653589793, neg(sinX(neg(ARG0)))), 0), 1), 7))), sinX(neg(ARG0)))
+0.0000, 0.999637: 
+sub(sinX(protectedPow(3.141592653589793, sub(sub(neg(cos(protectedDiv(-7, 3.141592653589793))), 1), 7))), sinX(neg(ARG0)))
+0.0000, 0.999884: 
+sub(sinX(protectedPow(3.141592653589793, sub(sub(neg(cos(protectedDiv(-7, 3.141592653589793))), sinX(ARG0)), 7))), sinX(neg(ARG0)))
+0.0000, 1.000000: 
+sub(protectedPow(mul(ARG0, 0), protectedDiv(neg(sub(ARG0, sinX(sub(neg(3), sinX(neg(ARG0)))))), 0)), sinX(neg(ARG0)))
+
+0.0000, 0.878902 :
+ zoo⋅(sinX(-x) + π)           
+0                   - sinX(-x)
+0.0000, 0.878902 :
+ zoo⋅(sinX(-x) + 1)           
+0                   - sinX(-x)
+0.0000, 0.893344 :
+        ⎛7⎞           
+ zoo⋅cos⎜─⎟           
+        ⎝x⎠           
+0           - sinX(-x)
+0.0000, 0.906063 :
+ zoo⋅(sinX(-x) + cos(9))           
+0                        - sinX(-x)
+0.0010, 0.910431 :
+ ⎛                    ⎛1⎞⎞        
+-⎜-cos(sinX(-x)) - sin⎜─⎟⎟⋅sinX(x)
+ ⎝                    ⎝π⎠⎠        
+0.0000, 0.927132 :
+ zoo⋅(-x + sinX(-x))           
+0                    - sinX(-x)
+0.0000, 0.931615 :
+ zoo⋅(x - 7)           
+ ───────────           
+   2⋅x - 7             
+0            - sinX(-x)
+0.0000, 0.931615 :
+ zoo⋅(x - 7)           
+ ───────────           
+    x - π              
+0            - sinX(-x)
+0.0000, 0.931615 :
+ zoo⋅(x - 7)           
+ ───────────           
+   2⋅x - 7             
+0            - sinX(-x)
+0.0000, 0.970044 :
+ zoo⋅(-x - 1 - sin(sin(2)))              
+0                           - sinX(x + π)
+0.0000, 0.989153 :
+ zoo⋅(-x - sinX(-x) - 1)              
+0                        - sinX(x + π)
+0.0000, 0.990447 :
+     ⎛         ⎛7⎞⎞           
+ zoo⋅⎜-x + sinX⎜─⎟⎟           
+     ⎝         ⎝x⎠⎠           
+0                   - sinX(-x)
+0.0010, 0.998461 :
+ ⎛                        ⎛1⎞⎞        
+-⎜-cos(sinX(-x - π)) - sin⎜─⎟⎟⋅sinX(x)
+ ⎝                        ⎝π⎠⎠        
+0.0000, 0.999028 :
+ zoo⋅(-cos(sinX(-x)) + π)           
+0                         - sinX(-x)
+0.0000, 0.999397 :
+    ⎛ zoo⋅(sinX(-x) + π) - 8⎞           
+sinX⎝π                      ⎠ - sinX(-x)
+0.0000, 0.999637 :
+               ⎛         ⎛7⎞⎞
+               ⎜ -8 - cos⎜─⎟⎟
+               ⎜         ⎝π⎠⎟
+-sinX(-x) + sin⎝π           ⎠
+0.0000, 0.999884 :
+    ⎛                   ⎛7⎞⎞           
+    ⎜ -sinX(x) - 7 - cos⎜─⎟⎟           
+    ⎜                   ⎝π⎠⎟           
+sinX⎝π                     ⎠ - sinX(-x)
+0.0000, 1.000000 :
+ zoo⋅(-x + sinX(-sinX(-x) - 3))           
+0                               - sinX(-x)
+
+

@@ -55,7 +55,10 @@ def main():
 	currentTime = datetime.datetime.now().strftime('%Y-%m-%d_%H:%M:%S')
 	file = open("out/MRbyGA_" + currentTime + ".txt", 'w', encoding='utf8')
 
-	file.write("Consumed time: " + str(end-start) + '\n\n')
+	m, s = divmod((end-start), 60)
+	h, m = divmod(m, 60)
+
+	file.write("Consumed time: %d:%02d:%02d" % (h,m,s) + '\n\n')
 
 	# print the HoF values without overlap
 	temp = ""

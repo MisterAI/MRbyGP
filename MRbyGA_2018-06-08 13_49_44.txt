@@ -1,0 +1,12 @@
+Consumed time: -16.525374174118042sinX(x)
+0.0000, 0.000000: 
+sinX(ARG0)-sinX(-x)
+0.0000, 0.160213: 
+neg(sinX(neg(ARG0)))sinX(-x + π)
+0.0000, 0.173438: 
+sinX(sub(3.141592653589793, ARG0))sinX(-x - π)
+0.0000, 0.272009: 
+sinX(sub(neg(3.141592653589793), ARG0))    ⎛       6   ⎞
+sinX⎝x - cos (1)⎠
+0.0000, 0.502633: 
+sinX(sub(ARG0, protectedPow(cos(1), mul(-6, -1))))
