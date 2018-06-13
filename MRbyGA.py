@@ -52,10 +52,10 @@ def main():
 	my_hof = [ind for ind in pop if 0.001 >= ind.fitness.getValues()[0]]
 	my_hof = sorted(my_hof, key=lambda individual: individual.fitness.getValues()[1])
 
-	currentTime = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-	file = open("MRbyGA_" + currentTime + ".txt", 'w', encoding='utf8')
+	currentTime = datetime.datetime.now().strftime('%Y-%m-%d_%H:%M:%S')
+	file = open("out/MRbyGA_" + currentTime + ".txt", 'w', encoding='utf8')
 
-	file.write("Consumed time: " + str(end-start) + '\n')
+	file.write("Consumed time: " + str(end-start) + '\n\n')
 
 	# print the HoF values without overlap
 	temp = ""
@@ -67,8 +67,7 @@ def main():
 			print('%.4f, %f'%(ind.fitness.getValues()), ':')
 			# print(ind)
 			sympy.pprint(temp)
-			#pickle.dump(temp, file)
-			file.write('%.4f, %f: '%(ind.fitness.getValues()) + '\n' + ind.__str__() + '\n')
+			file.write('%.4f, %f: '%(ind.fitness.getValues()) + '\n' + str(ind) + '\n' + sympy.pretty(temp) + '\n\n')
 
 	return pop, log, hof
 
