@@ -13,7 +13,11 @@ def main():
 	init_pop_size = 1000
 	num_offsprings = 400
 	pop_size = 300
+<<<<<<< HEAD
 	num_generations = 20
+=======
+	num_generations = 10
+>>>>>>> c6cb0f1a57dff561a75d5045dc55dac8454d368a
 	mse_fitness_weight = -1.0
 	symb_equiv_fitness_weight = 2.0
 	weights = (mse_fitness_weight, symb_equiv_fitness_weight)
