@@ -2,4 +2,5 @@ language: python
 python:
     - "3.5"
 script:
+    - mkdir out
     - python3 MRbyGA.py
