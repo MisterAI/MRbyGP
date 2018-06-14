@@ -1,0 +1,16 @@
+Consumed time: 0:15:13
+
+0.0000, 0.248527: 
+mul(sinX(ARG0), protectedPow(-2, protectedDiv(-2, 3.141592653589793)))
+    -2         
+    ───        
+     π         
+(-2)   ⋅sinX(x)
+
+0.0000, 0.368923: 
+mul(neg(protectedDiv(ARG0, ARG0)), sub(sinX(protectedPow(sub(sinX(-3), 3.141592653589793), -7)), sinX(ARG0)))
+             ⎛      1       ⎞
+sinX(x) - sin⎜──────────────⎟
+             ⎜             7⎟
+             ⎝(-π - sin(3)) ⎠
+

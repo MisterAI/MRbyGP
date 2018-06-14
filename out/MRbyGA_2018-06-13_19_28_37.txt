@@ -1,0 +1,7 @@
+Consumed time: 0:02:01
+
+0.0000, 0.540582: 
+sinX(sub(3.141592653589793, sub(mul(-1, 3.141592653589793), sub(mul(3.141592653589793, protectedDiv(sinX(protectedPow(sub(3.141592653589793, ARG0), sinX(ARG0))), 0)), ARG0))))
+    ⎛        ⎛           ⎛        sinX(x)⎞⎞      ⎞
+sinX⎝-x + mul⎝π, zoo⋅sinX⎝(-x + π)       ⎠⎠ + 2⋅π⎠
+

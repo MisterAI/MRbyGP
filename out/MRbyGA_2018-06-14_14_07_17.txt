@@ -1,0 +1,16 @@
+Consumed time: 0:16:22
+
+0.0000, 0.378861: 
+sub(sinX(ARG0), add(protectedDiv(add(protectedDiv(ARG0, 0), cos(10)), 0), -1))
+zoo⋅(zoo⋅x + cos(10)) + sinX(x) + 1
+
+0.0000, 0.378861: 
+sub(sinX(ARG0), add(protectedDiv(add(protectedDiv(ARG0, neg(3.141592653589793)), cos(10)), 0), -1))
+    ⎛  x          ⎞              
+zoo⋅⎜- ─ + cos(10)⎟ + sinX(x) + 1
+    ⎝  π          ⎠              
+
+0.0000, 0.378861: 
+sub(sinX(ARG0), add(protectedDiv(add(protectedDiv(ARG0, 0), cos(10)), 0), -1))
+zoo⋅(zoo⋅x + cos(10)) + sinX(x) + 1
+

@@ -1,0 +1,29 @@
+Consumed time: 0:34:32
+
+0.0000, 0.435289: 
+sub(sinX(ARG0), add(protectedPow(mul(3.141592653589793, ARG0), sinX(add(ARG0, sub(mul(-1, -1), mul(3.141592653589793, 3.141592653589793))))), cos(3.141592653589793)))
+           ⎛     2    ⎞              
+       sinX⎝x - π  + 1⎠              
+- (π⋅x)                 + sinX(x) + 1
+
+0.0000, 0.470030: 
+sub(sinX(ARG0), add(protectedPow(mul(3.141592653589793, ARG0), sinX(add(ARG0, sub(mul(-1, -1), mul(3.141592653589793, -7))))), cos(-3)))
+       sinX(x + 1 + 7⋅π)                   
+- (π⋅x)                  + sinX(x) - cos(3)
+
+0.0003, 0.478376: 
+sinX(sub(3.141592653589793, add(protectedDiv(cos(1), add(-9, protectedDiv(sinX(ARG0), add(add(3.141592653589793, 3.141592653589793), 1)))), ARG0)))
+    ⎛            cos(1)  ⎞
+sinX⎜-x + π - ───────────⎟
+    ⎜         sinX(x)    ⎟
+    ⎜         ─────── - 9⎟
+    ⎝         1 + 2⋅π    ⎠
+
+0.0003, 0.486590: 
+sinX(sub(3.141592653589793, add(protectedDiv(cos(1), add(-9, protectedDiv(sinX(ARG0), add(add(3.141592653589793, 3.141592653589793), -3)))), ARG0)))
+    ⎛            cos(1)   ⎞
+sinX⎜-x + π - ────────────⎟
+    ⎜         sinX(x)     ⎟
+    ⎜         ──────── - 9⎟
+    ⎝         -3 + 2⋅π    ⎠
+

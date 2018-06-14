@@ -6,7 +6,7 @@ import re
 import sympy
 from sympy.abc import x, pi
 import zss
-#import stringdist
+import stringdist
 import sys
 
 
@@ -23,7 +23,7 @@ def evalSymbReg(individual, points, toolbox):
 
 	my_ast = ast.parse(ind_str)
 
-	checkPow = CheckNestedPow()
+	checkPow = CheckNestedFunc()
 	checkPow.visit(my_ast)
 
 	nestedPowFlag = checkPow.getPowCount()
@@ -34,7 +34,7 @@ def evalSymbReg(individual, points, toolbox):
 	if nestedPowFlag or nestedTriFlag:
 		#print(str(individual))
 		print("NESTED")
-		avg_error = sys.float_info.max / len(points) #9999999.
+		avg_error = sys.float_info.max / len(points)  
 		return 1- math.pow(1.16, -avg_error)
 
 	try:
@@ -45,11 +45,11 @@ def evalSymbReg(individual, points, toolbox):
 
 	except Exception:
 		print("Exception")
-		avg_error = sys.float_info.max / len(points) #9999999.
+		avg_error = sys.float_info.max / len(points) #sys.float_info.max 
 		return 1 - math.pow(1.16, -avg_error)
 
 
-class CheckNestedPow(ast.NodeVisitor):
+class CheckNestedFunc(ast.NodeVisitor):
 
 	def __init__(self):
 		self.powCount = 0
@@ -218,17 +218,17 @@ def evalSimplicity(individual, target_func):
 	expr = convert_to_sympy_expr(individual)
 
 	# Test for string distance with levenshtein algorithm
-	#sdist = stringdist.levenshtein(str(individual), 'sinX(ARG0)')
+	sdist = stringdist.levenshtein(str(expr), 'sinX(ARG0)')
 	#print(sdist)
 
 	# Tree edit distance from Zhang-Shasha repository
-	dist = zss.simple_distance(expr, sympy.sympify('sinX(x)'), get_children, get_label, strdist)
+	#dist = zss.simple_distance(expr, sympy.sympify('sinX(x)'), get_children, get_label, strdist)
 	
 	#print("string distance: " + str(sdist))
 	#print("tree edit distance: " + str(dist))
 	#print("distance difference " + str(sdist - dist))
 
-	return 1 - math.pow(1.016, -dist)
+	return 1 - math.pow(1.016, -sdist)
 	# return -dist
 
 def get_fitness(individual, target_func, toolbox, points):

@@ -1,0 +1,20 @@
+Consumed time: 0:12:43
+
+0.0000, 0.076299: 
+sub(sub(protectedPow(1, neg(sinX(protectedDiv(sub(3.141592653589793, ARG0), sub(-8, 3.141592653589793))))), 1), sinX(neg(ARG0)))
+-sinX(-x)
+
+0.0000, 0.575635: 
+sub(sub(protectedPow(sub(-8, sinX(ARG0)), neg(sinX(protectedDiv(sub(3.141592653589793, ARG0), sub(-8, 3.141592653589793))))), 1), sinX(neg(ARG0)))
+                                   ⎛-x + π⎞
+                              -sinX⎜──────⎟
+                                   ⎝-8 - π⎠
+-sinX(-x) - 1 + (-sinX(x) - 8)             
+
+0.0000, 0.582318: 
+sub(sub(protectedPow(sub(3.141592653589793, sinX(ARG0)), neg(sinX(protectedDiv(sub(3.141592653589793, ARG0), sub(-8, 3.141592653589793))))), 1), sinX(neg(ARG0)))
+                                   ⎛-x + π⎞
+                              -sinX⎜──────⎟
+                                   ⎝-8 - π⎠
+-sinX(-x) - 1 + (-sinX(x) + π)             
+

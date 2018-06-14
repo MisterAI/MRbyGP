@@ -1,0 +1,12 @@
+Consumed time: 3:08:16
+0.0000, 1.000000: 
+sinX(protectedDiv(protectedDiv(ARG0, 1), protectedPow(9, cos(protectedDiv(sub(ARG0, protectedDiv(cos(4), sub(-9, 3.141592653589793))), 3.141592653589793)))))
+
+0.0000, 1.000000 :
+    ⎛     ⎛    cos(4)⎞  ⎞
+    ⎜     ⎜x - ──────⎟  ⎟
+    ⎜     ⎜    -9 - π⎟  ⎟
+    ⎜ -cos⎜──────────⎟  ⎟
+    ⎜     ⎝    π     ⎠  ⎟
+sinX⎝9                ⋅x⎠
+

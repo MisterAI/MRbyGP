@@ -1,0 +1,362 @@
+Consumed time: 0:02:23
+
+0.0000, 0.478376: 
+sinX(sub(mul(protectedPow(neg(1), add(mul(sinX(ARG0), ARG0), sub(neg(mul(sinX(ARG0), -7)), 3.141592653589793))), 3.141592653589793), ARG0))
+    ⎛    x⋅sinX(x) + 7⋅sinX(x) - π      ⎞
+sinX⎝(-1)                         ⋅π - x⎠
+
+0.0000, 0.540582: 
+sinX(sub(mul(protectedPow(neg(1), add(mul(sinX(ARG0), -7), sub(neg(mul(sinX(ARG0), -7)), 3.141592653589793))), 3.141592653589793), ARG0))
+    ⎛    -mul(sinX(x), -7) - 7⋅sinX(x) - π      ⎞
+sinX⎝(-1)                                 ⋅π - x⎠
+
+0.0000, 0.540582: 
+sinX(sub(mul(protectedPow(neg(1), add(mul(sinX(ARG0), -7), sub(neg(mul(sinX(-7), -7)), 3.141592653589793))), 3.141592653589793), ARG0))
+    ⎛    -mul(-sin(7), -7) - 7⋅sinX(x) - π      ⎞
+sinX⎝(-1)                                 ⋅π - x⎠
+
+0.0000, 0.540582: 
+sinX(sub(mul(protectedPow(neg(1), add(mul(sinX(ARG0), -7), sub(neg(mul(sinX(ARG0), -7)), 3.141592653589793))), 3.141592653589793), ARG0))
+    ⎛    -mul(sinX(x), -7) - 7⋅sinX(x) - π      ⎞
+sinX⎝(-1)                                 ⋅π - x⎠
+
+0.0000, 0.540582: 
+sinX(sub(mul(protectedPow(neg(1), add(mul(sinX(ARG0), -7), sub(neg(mul(sinX(-7), -7)), 3.141592653589793))), 3.141592653589793), ARG0))
+    ⎛    -mul(-sin(7), -7) - 7⋅sinX(x) - π      ⎞
+sinX⎝(-1)                                 ⋅π - x⎠
+
+0.0000, 0.540582: 
+sinX(sub(mul(protectedPow(neg(1), add(mul(sinX(ARG0), -7), sub(neg(mul(sinX(ARG0), -7)), 3.141592653589793))), 3.141592653589793), ARG0))
+    ⎛    -mul(sinX(x), -7) - 7⋅sinX(x) - π      ⎞
+sinX⎝(-1)                                 ⋅π - x⎠
+
+0.0000, 0.540582: 
+sinX(sub(mul(protectedPow(neg(1), add(mul(sinX(ARG0), -7), sub(neg(mul(sinX(-7), -7)), 3.141592653589793))), 3.141592653589793), ARG0))
+    ⎛    -mul(-sin(7), -7) - 7⋅sinX(x) - π      ⎞
+sinX⎝(-1)                                 ⋅π - x⎠
+
+0.0000, 0.540582: 
+sinX(sub(mul(protectedPow(neg(1), add(mul(sinX(ARG0), -7), sub(neg(mul(sinX(ARG0), -7)), 3.141592653589793))), 3.141592653589793), ARG0))
+    ⎛    -mul(sinX(x), -7) - 7⋅sinX(x) - π      ⎞
+sinX⎝(-1)                                 ⋅π - x⎠
+
+0.0000, 0.540582: 
+sinX(sub(mul(protectedPow(neg(1), add(mul(sinX(ARG0), -7), sub(neg(mul(sinX(-7), -7)), 3.141592653589793))), 3.141592653589793), ARG0))
+    ⎛    -mul(-sin(7), -7) - 7⋅sinX(x) - π      ⎞
+sinX⎝(-1)                                 ⋅π - x⎠
+
+0.0000, 0.540582: 
+sinX(sub(mul(protectedPow(neg(1), add(mul(sinX(ARG0), -7), sub(neg(mul(sinX(ARG0), -7)), 3.141592653589793))), 3.141592653589793), ARG0))
+    ⎛    -mul(sinX(x), -7) - 7⋅sinX(x) - π      ⎞
+sinX⎝(-1)                                 ⋅π - x⎠
+
+0.0000, 0.540582: 
+sinX(sub(mul(protectedPow(neg(1), add(mul(sinX(ARG0), -7), sub(neg(mul(sinX(-7), -7)), 3.141592653589793))), 3.141592653589793), ARG0))
+    ⎛    -mul(-sin(7), -7) - 7⋅sinX(x) - π      ⎞
+sinX⎝(-1)                                 ⋅π - x⎠
+
+0.0000, 0.540582: 
+sinX(sub(mul(protectedPow(neg(1), add(mul(sinX(ARG0), -7), sub(neg(mul(sinX(ARG0), -7)), 3.141592653589793))), 3.141592653589793), ARG0))
+    ⎛    -mul(sinX(x), -7) - 7⋅sinX(x) - π      ⎞
+sinX⎝(-1)                                 ⋅π - x⎠
+
+0.0000, 0.540582: 
+sinX(sub(mul(protectedPow(neg(1), add(mul(sinX(ARG0), -7), sub(neg(mul(sinX(-7), -7)), 3.141592653589793))), 3.141592653589793), ARG0))
+    ⎛    -mul(-sin(7), -7) - 7⋅sinX(x) - π      ⎞
+sinX⎝(-1)                                 ⋅π - x⎠
+
+0.0000, 0.540582: 
+sinX(sub(mul(protectedPow(neg(1), add(mul(sinX(ARG0), -7), sub(neg(mul(sinX(ARG0), -7)), 3.141592653589793))), 3.141592653589793), ARG0))
+    ⎛    -mul(sinX(x), -7) - 7⋅sinX(x) - π      ⎞
+sinX⎝(-1)                                 ⋅π - x⎠
+
+0.0000, 0.540582: 
+sinX(sub(mul(protectedPow(neg(1), add(mul(sinX(ARG0), -7), sub(neg(mul(sinX(-7), -7)), 3.141592653589793))), 3.141592653589793), ARG0))
+    ⎛    -mul(-sin(7), -7) - 7⋅sinX(x) - π      ⎞
+sinX⎝(-1)                                 ⋅π - x⎠
+
+0.0000, 0.540582: 
+sinX(sub(mul(protectedPow(neg(1), add(mul(sinX(ARG0), -7), sub(neg(mul(sinX(ARG0), -7)), 3.141592653589793))), 3.141592653589793), ARG0))
+    ⎛    -mul(sinX(x), -7) - 7⋅sinX(x) - π      ⎞
+sinX⎝(-1)                                 ⋅π - x⎠
+
+0.0000, 0.540582: 
+sinX(sub(mul(protectedPow(neg(1), add(mul(sinX(ARG0), -7), sub(neg(mul(sinX(-7), -7)), 3.141592653589793))), 3.141592653589793), ARG0))
+    ⎛    -mul(-sin(7), -7) - 7⋅sinX(x) - π      ⎞
+sinX⎝(-1)                                 ⋅π - x⎠
+
+0.0000, 0.540582: 
+sinX(sub(mul(protectedPow(neg(1), add(mul(sinX(ARG0), -7), sub(neg(mul(sinX(ARG0), -7)), 3.141592653589793))), 3.141592653589793), ARG0))
+    ⎛    -mul(sinX(x), -7) - 7⋅sinX(x) - π      ⎞
+sinX⎝(-1)                                 ⋅π - x⎠
+
+0.0000, 0.540582: 
+sinX(sub(mul(protectedPow(neg(1), add(mul(sinX(ARG0), -7), sub(neg(mul(sinX(-7), -7)), 3.141592653589793))), 3.141592653589793), ARG0))
+    ⎛    -mul(-sin(7), -7) - 7⋅sinX(x) - π      ⎞
+sinX⎝(-1)                                 ⋅π - x⎠
+
+0.0000, 0.540582: 
+sinX(sub(mul(protectedPow(neg(1), add(mul(sinX(ARG0), -7), sub(neg(mul(sinX(ARG0), -7)), 3.141592653589793))), 3.141592653589793), ARG0))
+    ⎛    -mul(sinX(x), -7) - 7⋅sinX(x) - π      ⎞
+sinX⎝(-1)                                 ⋅π - x⎠
+
+0.0000, 0.540582: 
+sinX(sub(mul(protectedPow(neg(1), add(mul(sinX(ARG0), -7), sub(neg(mul(sinX(-7), -7)), 3.141592653589793))), 3.141592653589793), ARG0))
+    ⎛    -mul(-sin(7), -7) - 7⋅sinX(x) - π      ⎞
+sinX⎝(-1)                                 ⋅π - x⎠
+
+0.0000, 0.540582: 
+sinX(sub(mul(protectedPow(neg(1), add(mul(sinX(ARG0), -7), sub(neg(mul(sinX(ARG0), -7)), 3.141592653589793))), 3.141592653589793), ARG0))
+    ⎛    -mul(sinX(x), -7) - 7⋅sinX(x) - π      ⎞
+sinX⎝(-1)                                 ⋅π - x⎠
+
+0.0000, 0.540582: 
+sinX(sub(mul(protectedPow(neg(1), add(mul(sinX(ARG0), -7), sub(neg(mul(sinX(-7), -7)), 3.141592653589793))), 3.141592653589793), ARG0))
+    ⎛    -mul(-sin(7), -7) - 7⋅sinX(x) - π      ⎞
+sinX⎝(-1)                                 ⋅π - x⎠
+
+0.0000, 0.540582: 
+sinX(sub(mul(protectedPow(neg(1), add(mul(sinX(ARG0), -7), sub(neg(mul(sinX(ARG0), -7)), 3.141592653589793))), 3.141592653589793), ARG0))
+    ⎛    -mul(sinX(x), -7) - 7⋅sinX(x) - π      ⎞
+sinX⎝(-1)                                 ⋅π - x⎠
+
+0.0000, 0.540582: 
+sinX(sub(mul(protectedPow(neg(1), add(mul(sinX(ARG0), -7), sub(neg(mul(sinX(-7), -7)), 3.141592653589793))), 3.141592653589793), ARG0))
+    ⎛    -mul(-sin(7), -7) - 7⋅sinX(x) - π      ⎞
+sinX⎝(-1)                                 ⋅π - x⎠
+
+0.0000, 0.540582: 
+sinX(sub(mul(protectedPow(neg(1), add(mul(sinX(ARG0), -7), sub(neg(mul(sinX(ARG0), -7)), 3.141592653589793))), 3.141592653589793), ARG0))
+    ⎛    -mul(sinX(x), -7) - 7⋅sinX(x) - π      ⎞
+sinX⎝(-1)                                 ⋅π - x⎠
+
+0.0000, 0.540582: 
+sinX(sub(mul(protectedPow(neg(1), add(mul(sinX(ARG0), -7), sub(neg(mul(sinX(-7), -7)), 3.141592653589793))), 3.141592653589793), ARG0))
+    ⎛    -mul(-sin(7), -7) - 7⋅sinX(x) - π      ⎞
+sinX⎝(-1)                                 ⋅π - x⎠
+
+0.0000, 0.540582: 
+sinX(sub(mul(protectedPow(neg(1), add(mul(sinX(ARG0), -7), sub(neg(mul(sinX(ARG0), -7)), 3.141592653589793))), 3.141592653589793), ARG0))
+    ⎛    -mul(sinX(x), -7) - 7⋅sinX(x) - π      ⎞
+sinX⎝(-1)                                 ⋅π - x⎠
+
+0.0000, 0.540582: 
+sinX(sub(mul(protectedPow(neg(1), add(mul(sinX(ARG0), -7), sub(neg(mul(sinX(-7), -7)), 3.141592653589793))), 3.141592653589793), ARG0))
+    ⎛    -mul(-sin(7), -7) - 7⋅sinX(x) - π      ⎞
+sinX⎝(-1)                                 ⋅π - x⎠
+
+0.0000, 0.540582: 
+sinX(sub(mul(protectedPow(neg(1), add(mul(sinX(ARG0), -7), sub(neg(mul(sinX(ARG0), -7)), 3.141592653589793))), 3.141592653589793), ARG0))
+    ⎛    -mul(sinX(x), -7) - 7⋅sinX(x) - π      ⎞
+sinX⎝(-1)                                 ⋅π - x⎠
+
+0.0000, 0.540582: 
+sinX(sub(mul(protectedPow(neg(1), add(mul(sinX(ARG0), -7), sub(neg(mul(sinX(ARG0), 3.141592653589793)), 3.141592653589793))), 3.141592653589793), ARG0))
+    ⎛    -mul(sinX(x), π) - 7⋅sinX(x) - π      ⎞
+sinX⎝(-1)                                ⋅π - x⎠
+
+0.0000, 0.540582: 
+sinX(sub(mul(protectedPow(neg(1), add(mul(sinX(ARG0), -7), sub(neg(mul(sinX(-7), -7)), 3.141592653589793))), 3.141592653589793), ARG0))
+    ⎛    -mul(-sin(7), -7) - 7⋅sinX(x) - π      ⎞
+sinX⎝(-1)                                 ⋅π - x⎠
+
+0.0000, 0.540582: 
+sinX(sub(mul(protectedPow(neg(1), add(mul(sinX(ARG0), -7), sub(neg(mul(sinX(ARG0), -7)), 3.141592653589793))), 3.141592653589793), ARG0))
+    ⎛    -mul(sinX(x), -7) - 7⋅sinX(x) - π      ⎞
+sinX⎝(-1)                                 ⋅π - x⎠
+
+0.0000, 0.540582: 
+sinX(sub(mul(protectedPow(neg(1), add(mul(sinX(ARG0), -7), sub(neg(mul(sinX(-7), -7)), 3.141592653589793))), 3.141592653589793), ARG0))
+    ⎛    -mul(-sin(7), -7) - 7⋅sinX(x) - π      ⎞
+sinX⎝(-1)                                 ⋅π - x⎠
+
+0.0000, 0.540582: 
+sinX(sub(mul(protectedPow(neg(1), add(mul(sinX(ARG0), -7), sub(neg(mul(sinX(ARG0), -7)), 3.141592653589793))), 3.141592653589793), ARG0))
+    ⎛    -mul(sinX(x), -7) - 7⋅sinX(x) - π      ⎞
+sinX⎝(-1)                                 ⋅π - x⎠
+
+0.0000, 0.540582: 
+sinX(sub(mul(protectedPow(neg(1), add(mul(sinX(ARG0), -7), sub(neg(mul(sinX(-7), -7)), 3.141592653589793))), 3.141592653589793), ARG0))
+    ⎛    -mul(-sin(7), -7) - 7⋅sinX(x) - π      ⎞
+sinX⎝(-1)                                 ⋅π - x⎠
+
+0.0000, 0.540582: 
+sinX(sub(mul(protectedPow(neg(1), add(mul(sinX(ARG0), -7), sub(neg(mul(sinX(ARG0), -7)), 3.141592653589793))), 3.141592653589793), ARG0))
+    ⎛    -mul(sinX(x), -7) - 7⋅sinX(x) - π      ⎞
+sinX⎝(-1)                                 ⋅π - x⎠
+
+0.0000, 0.540582: 
+sinX(sub(mul(protectedPow(neg(1), add(mul(sinX(ARG0), -7), sub(neg(mul(sinX(-7), -7)), 3.141592653589793))), 3.141592653589793), ARG0))
+    ⎛    -mul(-sin(7), -7) - 7⋅sinX(x) - π      ⎞
+sinX⎝(-1)                                 ⋅π - x⎠
+
+0.0000, 0.540582: 
+sinX(sub(mul(protectedPow(neg(1), add(mul(sinX(ARG0), -7), sub(neg(mul(sinX(ARG0), 3.141592653589793)), 3.141592653589793))), 3.141592653589793), ARG0))
+    ⎛    -mul(sinX(x), π) - 7⋅sinX(x) - π      ⎞
+sinX⎝(-1)                                ⋅π - x⎠
+
+0.0000, 0.540582: 
+sinX(sub(mul(protectedPow(neg(1), add(mul(sinX(ARG0), -7), sub(neg(mul(sinX(ARG0), -7)), 3.141592653589793))), 3.141592653589793), ARG0))
+    ⎛    -mul(sinX(x), -7) - 7⋅sinX(x) - π      ⎞
+sinX⎝(-1)                                 ⋅π - x⎠
+
+0.0000, 0.540582: 
+sinX(sub(mul(protectedPow(neg(1), add(mul(sinX(ARG0), -7), sub(neg(mul(sinX(-7), -7)), 3.141592653589793))), 3.141592653589793), ARG0))
+    ⎛    -mul(-sin(7), -7) - 7⋅sinX(x) - π      ⎞
+sinX⎝(-1)                                 ⋅π - x⎠
+
+0.0000, 0.540582: 
+sinX(sub(mul(protectedPow(neg(1), add(mul(sinX(ARG0), -7), sub(neg(mul(sinX(ARG0), -7)), 3.141592653589793))), 3.141592653589793), ARG0))
+    ⎛    -mul(sinX(x), -7) - 7⋅sinX(x) - π      ⎞
+sinX⎝(-1)                                 ⋅π - x⎠
+
+0.0000, 0.540582: 
+sinX(sub(mul(protectedPow(neg(1), add(mul(sinX(ARG0), -7), sub(neg(mul(sinX(-7), -7)), 3.141592653589793))), 3.141592653589793), ARG0))
+    ⎛    -mul(-sin(7), -7) - 7⋅sinX(x) - π      ⎞
+sinX⎝(-1)                                 ⋅π - x⎠
+
+0.0000, 0.540582: 
+sinX(sub(mul(protectedPow(neg(1), add(mul(sinX(ARG0), -7), sub(neg(mul(sinX(ARG0), -7)), 3.141592653589793))), 3.141592653589793), ARG0))
+    ⎛    -mul(sinX(x), -7) - 7⋅sinX(x) - π      ⎞
+sinX⎝(-1)                                 ⋅π - x⎠
+
+0.0000, 0.540582: 
+sinX(sub(mul(protectedPow(neg(1), add(mul(sinX(ARG0), -7), sub(neg(mul(sinX(-7), -7)), 3.141592653589793))), 3.141592653589793), ARG0))
+    ⎛    -mul(-sin(7), -7) - 7⋅sinX(x) - π      ⎞
+sinX⎝(-1)                                 ⋅π - x⎠
+
+0.0000, 0.540582: 
+sinX(sub(mul(protectedPow(neg(1), add(mul(sinX(ARG0), -7), sub(neg(mul(sinX(ARG0), -7)), 3.141592653589793))), 3.141592653589793), ARG0))
+    ⎛    -mul(sinX(x), -7) - 7⋅sinX(x) - π      ⎞
+sinX⎝(-1)                                 ⋅π - x⎠
+
+0.0000, 0.540582: 
+sinX(sub(mul(protectedPow(neg(1), add(mul(sinX(ARG0), -7), sub(neg(mul(sinX(-7), -7)), 3.141592653589793))), 3.141592653589793), ARG0))
+    ⎛    -mul(-sin(7), -7) - 7⋅sinX(x) - π      ⎞
+sinX⎝(-1)                                 ⋅π - x⎠
+
+0.0000, 0.540582: 
+sinX(sub(mul(protectedPow(neg(1), add(mul(sinX(ARG0), -7), sub(neg(mul(sinX(ARG0), -7)), 3.141592653589793))), 3.141592653589793), ARG0))
+    ⎛    -mul(sinX(x), -7) - 7⋅sinX(x) - π      ⎞
+sinX⎝(-1)                                 ⋅π - x⎠
+
+0.0000, 0.540582: 
+sinX(sub(mul(protectedPow(neg(1), add(mul(sinX(ARG0), -7), sub(neg(mul(sinX(-7), -7)), 3.141592653589793))), 3.141592653589793), ARG0))
+    ⎛    -mul(-sin(7), -7) - 7⋅sinX(x) - π      ⎞
+sinX⎝(-1)                                 ⋅π - x⎠
+
+0.0000, 0.540582: 
+sinX(sub(mul(protectedPow(neg(1), add(mul(sinX(ARG0), -7), sub(neg(mul(sinX(ARG0), -7)), 3.141592653589793))), 3.141592653589793), ARG0))
+    ⎛    -mul(sinX(x), -7) - 7⋅sinX(x) - π      ⎞
+sinX⎝(-1)                                 ⋅π - x⎠
+
+0.0000, 0.540582: 
+sinX(sub(mul(protectedPow(neg(1), add(mul(sinX(ARG0), -7), sub(neg(mul(sinX(-7), -7)), 3.141592653589793))), 3.141592653589793), ARG0))
+    ⎛    -mul(-sin(7), -7) - 7⋅sinX(x) - π      ⎞
+sinX⎝(-1)                                 ⋅π - x⎠
+
+0.0000, 0.540582: 
+sinX(sub(mul(protectedPow(neg(1), add(mul(sinX(ARG0), -7), sub(neg(mul(sinX(ARG0), -7)), 3.141592653589793))), 3.141592653589793), ARG0))
+    ⎛    -mul(sinX(x), -7) - 7⋅sinX(x) - π      ⎞
+sinX⎝(-1)                                 ⋅π - x⎠
+
+0.0000, 0.540582: 
+sinX(sub(mul(protectedPow(neg(1), add(mul(sinX(ARG0), -7), sub(neg(mul(sinX(-7), -7)), 3.141592653589793))), 3.141592653589793), ARG0))
+    ⎛    -mul(-sin(7), -7) - 7⋅sinX(x) - π      ⎞
+sinX⎝(-1)                                 ⋅π - x⎠
+
+0.0000, 0.540582: 
+sinX(sub(mul(protectedPow(neg(1), add(mul(sinX(ARG0), -7), sub(neg(mul(sinX(ARG0), -7)), 3.141592653589793))), 3.141592653589793), ARG0))
+    ⎛    -mul(sinX(x), -7) - 7⋅sinX(x) - π      ⎞
+sinX⎝(-1)                                 ⋅π - x⎠
+
+0.0000, 0.540582: 
+sinX(sub(mul(protectedPow(neg(1), add(mul(sinX(ARG0), -7), sub(neg(mul(sinX(-7), -7)), 3.141592653589793))), 3.141592653589793), ARG0))
+    ⎛    -mul(-sin(7), -7) - 7⋅sinX(x) - π      ⎞
+sinX⎝(-1)                                 ⋅π - x⎠
+
+0.0000, 0.540582: 
+sinX(sub(mul(protectedPow(neg(1), add(mul(sinX(ARG0), -7), sub(neg(mul(sinX(ARG0), -7)), 3.141592653589793))), 3.141592653589793), ARG0))
+    ⎛    -mul(sinX(x), -7) - 7⋅sinX(x) - π      ⎞
+sinX⎝(-1)                                 ⋅π - x⎠
+
+0.0000, 0.540582: 
+sinX(sub(mul(protectedPow(neg(1), add(mul(sinX(ARG0), -7), sub(neg(mul(sinX(-7), -7)), 3.141592653589793))), 3.141592653589793), ARG0))
+    ⎛    -mul(-sin(7), -7) - 7⋅sinX(x) - π      ⎞
+sinX⎝(-1)                                 ⋅π - x⎠
+
+0.0000, 0.540582: 
+sinX(sub(mul(protectedPow(neg(1), add(mul(sinX(ARG0), -7), sub(neg(mul(sinX(ARG0), -7)), 3.141592653589793))), 3.141592653589793), ARG0))
+    ⎛    -mul(sinX(x), -7) - 7⋅sinX(x) - π      ⎞
+sinX⎝(-1)                                 ⋅π - x⎠
+
+0.0000, 0.540582: 
+sinX(sub(mul(protectedPow(neg(1), add(mul(sinX(ARG0), -7), sub(neg(mul(sinX(-7), -7)), 3.141592653589793))), 3.141592653589793), ARG0))
+    ⎛    -mul(-sin(7), -7) - 7⋅sinX(x) - π      ⎞
+sinX⎝(-1)                                 ⋅π - x⎠
+
+0.0000, 0.540582: 
+sinX(sub(mul(protectedPow(neg(1), add(mul(sinX(ARG0), -7), sub(neg(mul(sinX(ARG0), -7)), 3.141592653589793))), 3.141592653589793), ARG0))
+    ⎛    -mul(sinX(x), -7) - 7⋅sinX(x) - π      ⎞
+sinX⎝(-1)                                 ⋅π - x⎠
+
+0.0000, 0.540582: 
+sinX(sub(mul(protectedPow(neg(1), add(mul(sinX(ARG0), -7), sub(neg(mul(sinX(-7), -7)), 3.141592653589793))), 3.141592653589793), ARG0))
+    ⎛    -mul(-sin(7), -7) - 7⋅sinX(x) - π      ⎞
+sinX⎝(-1)                                 ⋅π - x⎠
+
+0.0000, 0.540582: 
+sinX(sub(mul(protectedPow(neg(1), add(mul(sinX(ARG0), -7), sub(neg(mul(sinX(ARG0), -7)), 3.141592653589793))), 3.141592653589793), ARG0))
+    ⎛    -mul(sinX(x), -7) - 7⋅sinX(x) - π      ⎞
+sinX⎝(-1)                                 ⋅π - x⎠
+
+0.0000, 0.540582: 
+sinX(sub(mul(protectedPow(neg(1), add(mul(sinX(ARG0), -7), sub(neg(mul(sinX(-7), -7)), 3.141592653589793))), 3.141592653589793), ARG0))
+    ⎛    -mul(-sin(7), -7) - 7⋅sinX(x) - π      ⎞
+sinX⎝(-1)                                 ⋅π - x⎠
+
+0.0000, 0.540582: 
+sinX(sub(mul(protectedPow(neg(1), add(mul(sinX(ARG0), -7), sub(neg(mul(sinX(ARG0), -7)), 3.141592653589793))), 3.141592653589793), ARG0))
+    ⎛    -mul(sinX(x), -7) - 7⋅sinX(x) - π      ⎞
+sinX⎝(-1)                                 ⋅π - x⎠
+
+0.0000, 0.540582: 
+sinX(sub(mul(protectedPow(neg(1), add(mul(sinX(ARG0), -7), sub(neg(mul(sinX(-7), -7)), 3.141592653589793))), 3.141592653589793), ARG0))
+    ⎛    -mul(-sin(7), -7) - 7⋅sinX(x) - π      ⎞
+sinX⎝(-1)                                 ⋅π - x⎠
+
+0.0000, 0.540582: 
+sinX(sub(mul(protectedPow(neg(1), add(mul(sinX(ARG0), -7), sub(neg(mul(sinX(ARG0), -7)), 3.141592653589793))), 3.141592653589793), ARG0))
+    ⎛    -mul(sinX(x), -7) - 7⋅sinX(x) - π      ⎞
+sinX⎝(-1)                                 ⋅π - x⎠
+
+0.0000, 0.540582: 
+sinX(sub(mul(protectedPow(neg(1), add(mul(sinX(ARG0), -7), sub(neg(mul(sinX(-7), -7)), 3.141592653589793))), 3.141592653589793), ARG0))
+    ⎛    -mul(-sin(7), -7) - 7⋅sinX(x) - π      ⎞
+sinX⎝(-1)                                 ⋅π - x⎠
+
+0.0000, 0.540582: 
+sinX(sub(mul(protectedPow(neg(1), add(mul(sinX(ARG0), -7), sub(neg(mul(sinX(ARG0), -7)), 3.141592653589793))), 3.141592653589793), ARG0))
+    ⎛    -mul(sinX(x), -7) - 7⋅sinX(x) - π      ⎞
+sinX⎝(-1)                                 ⋅π - x⎠
+
+0.0000, 0.540582: 
+sinX(sub(mul(protectedPow(neg(1), add(mul(sinX(ARG0), -7), sub(neg(mul(sinX(-7), -7)), 3.141592653589793))), 3.141592653589793), ARG0))
+    ⎛    -mul(-sin(7), -7) - 7⋅sinX(x) - π      ⎞
+sinX⎝(-1)                                 ⋅π - x⎠
+
+0.0000, 0.540582: 
+sinX(sub(mul(protectedPow(neg(1), add(mul(sinX(ARG0), -7), sub(neg(mul(sinX(ARG0), -7)), 3.141592653589793))), 3.141592653589793), ARG0))
+    ⎛    -mul(sinX(x), -7) - 7⋅sinX(x) - π      ⎞
+sinX⎝(-1)                                 ⋅π - x⎠
+
+0.0000, 0.540582: 
+sinX(sub(mul(protectedPow(neg(1), add(mul(sinX(ARG0), -7), sub(neg(mul(sinX(-7), -7)), 3.141592653589793))), 3.141592653589793), ARG0))
+    ⎛    -mul(-sin(7), -7) - 7⋅sinX(x) - π      ⎞
+sinX⎝(-1)                                 ⋅π - x⎠
+
+0.0000, 0.540582: 
+sinX(sub(mul(protectedPow(neg(1), add(mul(sinX(ARG0), -7), sub(neg(mul(sinX(ARG0), -7)), 3.141592653589793))), 3.141592653589793), ARG0))
+    ⎛    -mul(sinX(x), -7) - 7⋅sinX(x) - π      ⎞
+sinX⎝(-1)                                 ⋅π - x⎠
+

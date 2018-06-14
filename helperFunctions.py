@@ -28,4 +28,4 @@ def protectedPow(left, right):
 		return 1
 
 	except OverflowError:
-		return sys.float_info.max #9999999.
+		return sys.float_info.max
