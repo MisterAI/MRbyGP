@@ -218,18 +218,9 @@ def evalSimplicity(individual, target_func):
 	expr = convert_to_sympy_expr(individual)
 
 	# Test for string distance with levenshtein algorithm
-	sdist = stringdist.levenshtein(str(expr), 'sinX(ARG0)')
-	#print(sdist)
-
-	# Tree edit distance from Zhang-Shasha repository
-	#dist = zss.simple_distance(expr, sympy.sympify('sinX(x)'), get_children, get_label, strdist)
-	
-	#print("string distance: " + str(sdist))
-	#print("tree edit distance: " + str(dist))
-	#print("distance difference " + str(sdist - dist))
+	sdist = stringdist.levenshtein(str(expr), 'sinX(x)')
 
 	return 1 - math.pow(1.016, -sdist)
-	# return -dist
 
 def get_fitness(individual, target_func, toolbox, points):
 	return evalSymbReg(individual, points, toolbox), evalSimplicity(individual, target_func)
