@@ -185,11 +185,11 @@ def convert_to_sympy_expr(individual):
 	my_ast = ReplacePow().visit(my_ast)
 
 	expr_string = astor.to_source(my_ast)
-	expr_string = re.sub(r'add\(', 'Add(', expr_string)
-	expr_string = re.sub(r'mul\(', 'Mul(', expr_string)
+	expr_string = re.sub(r'add[\n ]*\(', 'Add(', expr_string)
+	expr_string = re.sub(r'mul[\n ]*\(', 'Mul(', expr_string)
 	expr_string = re.sub(r'3.141592653589793', 'pi', expr_string)
 	expr_string = re.sub(r'ARG0', 'x', expr_string)
-	expr_string = re.sub(r'pow\(', 'Pow(', expr_string)
+	expr_string = re.sub(r'pow[\n ]*\(', 'Pow(', expr_string)
 
 	expr = sympy.sympify(expr_string)
 	expr = replace_const_sin(expr)
