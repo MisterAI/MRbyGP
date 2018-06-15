@@ -86,6 +86,8 @@ def main():
 		plt.plot(log.chapters['fitness_dist'].select('min'))
 		plt.plot(log.chapters['fitness_dist'].select('max'))
 		plt.show()
+	except:
+		pass
 
 	return pop, log, hof
 
