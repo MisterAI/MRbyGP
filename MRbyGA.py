@@ -5,7 +5,6 @@ import sympy
 from FitnessEvaluation import convert_to_sympy_expr
 from deap import tools, algorithms
 from GAToolbox import get_toolbox
-import sys
 import datetime
 import time
 import matplotlib.pyplot as plt

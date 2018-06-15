@@ -140,7 +140,7 @@ def ast_no_zero_one_subtree(individual):
 	return not has_zero_one_subtree
 
 filters = [
-	 require_function,
+	require_function,
 	# add_no_zero,
 	# sub_no_zero,
 	# sub_no_equal,
@@ -154,5 +154,5 @@ filters = [
 	# add_no_inverse,
 	# cos_no_zero_pi,
 	# ast_no_zero_one_subtree,
-	#nested_pow
+	# nested_pow
 	]

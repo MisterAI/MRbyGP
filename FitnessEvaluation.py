@@ -13,14 +13,9 @@ import sys
 def evalSymbReg(individual, points, toolbox):
 	# Transform the tree expression in a callable function
 	func = toolbox.compile(expr=individual)
-	print(str(individual))
-	# Evaluate the mean squared error between the expression
-	# and the function to analyse
 
 	# Check whether there is nested pow, like pow(pow(x,2)) or pow(x,pow(2,10))
 	ind_str = str(individual)
-	#ind_str = 'sinX(add(neg(protectedPow(ARG0, protectedDiv(ARG0, add(neg(protectedPow(ARG0, sub(3.141592653589793, ARG0))), 3.141592653589793)))), ARG0))'
-
 	my_ast = ast.parse(ind_str)
 
 	checkPow = CheckNestedFunc()
@@ -29,16 +24,15 @@ def evalSymbReg(individual, points, toolbox):
 	nestedPowFlag = checkPow.getPowCount()
 	nestedTriFlag = checkPow.getTriCount()
 
-	#print(nestedPowFlag)
 
 	if nestedPowFlag or nestedTriFlag:
-		#print(str(individual))
 		print("NESTED")
 		avg_error = sys.float_info.max / len(points)  
 		return 1- math.pow(1.16, -avg_error)
 
 	try:
-		#print("CALCULATION")
+		# Evaluate the mean squared error between the expression
+		# and the function to analyse
 		sqerrors = ((func(x) - individual.target_func(x))**2 for x in points)
 		avg_error = math.fsum(sqerrors) / len(points)
 		return 1 - math.pow(1.16, -avg_error)
@@ -63,14 +57,11 @@ class CheckNestedFunc(ast.NodeVisitor):
 		
 		if node.func.id == 'protectedPow':
 			self.powCount += 1
-			#print("pow func" + str(self.powCount))
 			
 		elif node.func.id == 'sinX' or node.func.id == 'cos':
 			self.trigonometricCount += 1
 
-		#print(self.powCount)
 		return node
-		#print(self.powCount)
 
 	def getPowCount(self):
 		if self.powCount >= 2:
@@ -83,7 +74,6 @@ class CheckNestedFunc(ast.NodeVisitor):
 			return True
 		else:
 			return False
-
 
 
 class ReplaceDiv(ast.NodeTransformer):

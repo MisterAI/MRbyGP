@@ -34,8 +34,6 @@ def get_toolbox(target_func, weights):
 	toolbox.register("compile", gp.compile, pset=pset)
 
 	eval_range = [x/20. * math.pi for x in range(-20,20)] + [x for x in range(-20, 20)]
-	# toolbox.register("evaluate", evalSymbReg, points=eval_range, toolbox=toolbox)
-	# toolbox.register("evaluate", evalSimplicity, target_func=target_func)
 	toolbox.register("evaluate", get_fitness, target_func=target_func, toolbox=toolbox, points=eval_range)
 
 	
@@ -44,7 +42,6 @@ def get_toolbox(target_func, weights):
 		toolbox.decorate('evaluate', tools.DeltaPenalty(filter_, [1000., 0.]))
 	
 	toolbox.register("select", tools.selSPEA2)
-	#toolbox.register("select", tools.selTournament, tournsize=3)
 	toolbox.register("mate", gp.cxOnePoint)
 	toolbox.register("expr_mut", gp.genFull, min_=0, max_=2)
 	toolbox.register("mutate", gp.mutUniform, expr=toolbox.expr_mut, pset=pset)
