@@ -7,6 +7,7 @@ from deap import tools, algorithms
 from GAToolbox import get_toolbox
 import datetime
 import time
+import cProfile
 import matplotlib.pyplot as plt
 
 def main():
@@ -89,4 +90,4 @@ def main():
 	return pop, log, hof
 
 if __name__ == "__main__":
-	main()
+	cProfile.run('main()', sort='cumulative')
