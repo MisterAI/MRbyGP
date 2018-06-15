@@ -3,3 +3,4 @@ sympy
 zss
 astor
 StringDist
+matplotlib
