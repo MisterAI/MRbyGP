@@ -41,7 +41,7 @@ def get_toolbox(target_func, weights):
 	
 	# add filters for unwanted behaviour
 	for filter_ in filters:
-		toolbox.decorate('evaluate', tools.DeltaPenalty(filter_, 1000.))
+		toolbox.decorate('evaluate', tools.DeltaPenalty(filter_, [1000., 0.]))
 	
 	toolbox.register("select", tools.selSPEA2)
 	#toolbox.register("select", tools.selTournament, tournsize=3)
