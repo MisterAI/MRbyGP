@@ -48,6 +48,9 @@ def evalSymbReg(individual, points, toolbox):
 		avg_error = sys.float_info.max / len(points) #sys.float_info.max 
 		return 1 - math.pow(1.16, -avg_error)
 
+	except ValueError as e:
+		print('Erroneous individual:', individual)
+		raise e
 
 class CheckNestedFunc(ast.NodeVisitor):
 
