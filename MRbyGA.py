@@ -8,6 +8,7 @@ from GAToolbox import get_toolbox
 import sys
 import datetime
 import time
+import matplotlib.pyplot as plt
 
 def main():
 	init_pop_size = 1000
@@ -71,6 +72,20 @@ def main():
 			# print(ind)
 			sympy.pprint(temp)
 			file.write('%.4f, %f: '%(ind.fitness.getValues()) + '\n' + str(ind) + '\n' + sympy.pretty(temp) + '\n\n')
+
+	plt.figure(1)
+	plt.subplot(211)
+	plt.axis(ymax=1.0)
+	plt.plot(log.chapters['fitness_mse'].select('avg'))
+	plt.plot(log.chapters['fitness_mse'].select('min'))
+	plt.plot(log.chapters['fitness_mse'].select('max'))
+
+	plt.subplot(212)
+	plt.axis(ymax=1.0)
+	plt.plot(log.chapters['fitness_dist'].select('avg'))
+	plt.plot(log.chapters['fitness_dist'].select('min'))
+	plt.plot(log.chapters['fitness_dist'].select('max'))
+	plt.show()
 
 	return pop, log, hof
 
