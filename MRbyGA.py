@@ -67,9 +67,14 @@ def main():
 			continue
 		else:
 			temp = convert_to_sympy_expr(ind)
-			print('%.4f, %f'%(ind.fitness.getValues()), ':')
-			# print(ind)
-			sympy.pprint(temp)
+
+			print('%.4f, %f:'%(ind.fitness.getValues()))
+			print('before: ', temp)
+			new_temp = eval_const_subtrees(temp)
+			new_temp = sympy.printing.str.sstr(new_temp, full_prec=False)
+			new_temp = re.sub(r'-1\.0\*', '-', new_temp)
+			print('after: ', new_temp, '\n')
+
 			file.write('%.4f, %f: '%(ind.fitness.getValues()) + '\n' + str(ind) + '\n' + sympy.pretty(temp) + '\n\n')
 
 	plt.figure(1)
