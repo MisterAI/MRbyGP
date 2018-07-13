@@ -8,6 +8,7 @@ from GAToolbox import get_toolbox
 import datetime
 import time
 import matplotlib.pyplot as plt
+import re
 
 def main():
 	init_pop_size = 1000
