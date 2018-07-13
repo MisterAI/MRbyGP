@@ -78,19 +78,24 @@ def main():
 
 			file.write('%.4f, %f: '%(ind.fitness.getValues()) + '\n' + str(ind) + '\n' + sympy.pretty(temp) + '\n\n')
 
-	plt.figure(1)
-	plt.subplot(211)
-	plt.axis(ymax=1.0)
-	plt.plot(log.chapters['fitness_mse'].select('avg'))
-	plt.plot(log.chapters['fitness_mse'].select('min'))
-	plt.plot(log.chapters['fitness_mse'].select('max'))
+	try:
+		plt.figure(1)
+		plt.subplot(211)
+		plt.axis(ymax=1.0)
+		plt.plot(log.chapters['fitness_mse'].select('avg'))
+		plt.plot(log.chapters['fitness_mse'].select('min'))
+		plt.plot(log.chapters['fitness_mse'].select('max'))
+		plt.title('Mean squared error')
 
-	plt.subplot(212)
-	plt.axis(ymax=1.0)
-	plt.plot(log.chapters['fitness_dist'].select('avg'))
-	plt.plot(log.chapters['fitness_dist'].select('min'))
-	plt.plot(log.chapters['fitness_dist'].select('max'))
-	plt.show()
+		plt.subplot(212)
+		plt.axis(ymax=1.0)
+		plt.plot(log.chapters['fitness_dist'].select('avg'))
+		plt.plot(log.chapters['fitness_dist'].select('min'))
+		plt.plot(log.chapters['fitness_dist'].select('max'))
+		plt.title('String distance')
+		plt.show()
+	except:
+		pass
 
 	return pop, log, hof
 
