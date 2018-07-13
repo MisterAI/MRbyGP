@@ -2,7 +2,7 @@ import random
 import math
 import numpy
 import sympy
-from FitnessEvaluation import convert_to_sympy_expr
+from SympyManipulation import convert_to_sympy_expr, eval_const_subtrees
 from deap import tools, algorithms
 from GAToolbox import get_toolbox
 import datetime
