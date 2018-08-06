@@ -126,6 +126,7 @@ def round_value(expr):
 
 def eval_const_subtrees(expr):
 	args = [round_value(arg) for arg in expr.args]
+	print(args)
 	for i in range(len(args)):
 		args[i] = eval_const_subtrees(args[i])
 	if args:

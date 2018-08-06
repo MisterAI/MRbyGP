@@ -16,7 +16,7 @@ def sinX(x):
 	return math.sin(x)
 
 def protectedPow(left, right):
-	if isinstance(right, float):
+	if not isinstance(right, int):
 		right = int(right)
 	try:
 		return left ** right

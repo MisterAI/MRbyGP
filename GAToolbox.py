@@ -22,15 +22,23 @@ def get_toolbox(target_func, weights):
 	pset.addEphemeralConstant("rand10010", lambda: random.randint(-10,10))
 	pset.addTerminal(math.pi)
 
+	# Constant Simplification
+	pset.addEphemeralConstant("randfloat10010", lambda: random.uniform(-10.0,10.0))
+
+
 	# define the general form of an individual
 	creator.create("FitnessMulti", base.Fitness, weights=weights)
-	creator.create("Individual", gp.PrimitiveTree, fitness=creator.FitnessMulti, target_func=target_func)
+	#creator.create("Individual", gp.PrimitiveTree, fitness=creator.FitnessMulti, target_func=target_func)
+	creator.create("Individual", gp.PrimitiveTree, target_func=target_func)
+	creator.create("Tuple", tuple, fitness=creator.FitnessMulti)
 
 	toolbox = base.Toolbox()
 
 	toolbox.register("expr", gp.genHalfAndHalf, pset=pset, min_=1, max_=3)
 	toolbox.register("individual", tools.initIterate, creator.Individual, toolbox.expr)
-	toolbox.register("population", tools.initRepeat, list, toolbox.individual)
+	toolbox.register("tuple", tools.initRepeat, creator.Tuple, toolbox.individual,2)
+	#toolbox.register("population", tools.initRepeat, list, toolbox.individual)
+	toolbox.register("population", tools.initRepeat, list, toolbox.tuple)
 	toolbox.register("compile", gp.compile, pset=pset)
 
 	eval_range = [x/20. * math.pi for x in range(-20,20)] + [x for x in range(-20, 20)]
