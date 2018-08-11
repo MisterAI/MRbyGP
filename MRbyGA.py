@@ -19,7 +19,7 @@ def main():
 	symb_equiv_fitness_weight = 2.0
 	weights = (mse_fitness_weight, symb_equiv_fitness_weight)
 	# list all the functions to analyse
-	functions = [math.sin]
+	functions = ["sinX("]
 
 	# create the toolbox
 	toolbox = get_toolbox(functions[0], weights)
