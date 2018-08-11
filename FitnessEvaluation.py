@@ -22,17 +22,10 @@ def evalSymbReg(individual, points, toolbox):
 	rhs_func = toolbox.compile(individual[1])
 
 	# Check whether there is nested pow, like pow(pow(x,2)) or pow(x,pow(2,10))
-	#ind_str = str(individual)
-	#my_ast = ast.parse(ind_str)
-
 	lhs_ast = ast.parse(str(lhs))
 	rhs_ast = ast.parse(str(rhs))
 
 	checkPow = CheckNestedFunc()
-	#checkPow.visit(my_ast)
-
-	#nestedPowFlag = checkPow.getPowCount()
-	#nestedTriFlag = checkPow.getTriCount()
 
 	checkPow.visit(lhs_ast)
 
@@ -47,28 +40,20 @@ def evalSymbReg(individual, points, toolbox):
 	rhsNestedTriFlag = checkPow.getTriCount()
 
 	if lhsNestedPowFlag or lhsNestedTriFlag or rhsNestedTriFlag or rhsNestedTriFlag:
-		#print("NESTED")
-		#avg_error = sys.float_info.max / len(points)  
-		#return 1- math.pow(1.16, -avg_error), True
 		return 1, True
 
 	try:
 		# Evaluate the mean squared error between the expression
-		# and the function to analyse
-		#sqerrors = ((func(x) - individual.target_func(x))**2 for x in points)
+		# on the left and the right hand-side
 		sqerrors = ((lhs_func(x) - rhs_func(x))**2 for x in points)
 		avg_error = math.fsum(sqerrors) / len(points)
+		# normalise the fitness value
 		return 1 - math.pow(1.16, -avg_error), False
 
 	except Exception as e:
+		print("MSE fitness calculation exception")
 		print(e)
 		return 1, True
-		#avg_error = sys.float_info.max / len(points) #sys.float_info.max 
-		#return 1 - math.pow(1.16, -avg_error), True
-		
-	#except ValueError as e:
-	#	print('Erroneous individual:', individual)
-	#	raise e
 
 class CheckNestedFunc(ast.NodeVisitor):
 
