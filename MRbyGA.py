@@ -2,7 +2,7 @@ import random
 import math
 import numpy
 import sympy
-from SympyManipulation import convert_to_sympy_expr, eval_const_subtrees
+from SympyManipulation import convert_to_sympy_expr, eval_const_subtrees, conv_to_simple_expr
 from deap import tools, algorithms
 from GAToolbox import get_toolbox
 import datetime

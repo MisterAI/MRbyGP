@@ -8,13 +8,11 @@ from sympy.abc import x, pi
 import zss
 import stringdist
 import sys
-from SympyManipulation import convert_to_sympy_expr
+from SympyManipulation import convert_to_sympy_expr, eval_const_subtrees, conv_to_simple_expr
 
 
 def evalSymbReg(individual, points, toolbox):
 	# Transform the tree expression in a callable function
-	#func = toolbox.compile(expr=individual)
-	#print(individual)
 	lhs = individual[0]
 	rhs = individual[1]
 
@@ -125,14 +123,13 @@ def get_children(expr):
 	return children
 
 def evalSimplicity(individual, target_func):
-	#expr = convert_to_sympy_expr(individual)
-	lhs_expr = convert_to_sympy_expr(individual[0])
-	rhs_expr = convert_to_sympy_expr(individual[1])
+	lhs_expr = conv_to_simple_expr(individual[0])
+	rhs_expr = conv_to_simple_expr(individual[1])
 
 	# Test for string distance with levenshtein algorithm
-	#sdist = stringdist.levenshtein(str(expr), 'sinX(x)')
 	sdist = stringdist.levenshtein(str(lhs_expr), str(rhs_expr))
 
+	# Normalise string distance
 	return 1 - math.pow(1.016, -sdist)
 
 def get_fitness(individual, target_func, toolbox, points):
