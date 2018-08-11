@@ -4,7 +4,7 @@ import numpy
 import sympy
 from SympyManipulation import convert_to_sympy_expr, eval_const_subtrees, conv_to_simple_expr
 from deap import tools, algorithms
-from GAToolbox import get_toolbox
+from GAToolbox import get_toolbox, get_max_len
 import datetime
 import time
 import matplotlib.pyplot as plt
@@ -34,13 +34,13 @@ def main():
 	# collect some statistics
 	stats_fit_mse = tools.Statistics(lambda ind: ind.fitness.values[0])
 	stats_fit_dist = tools.Statistics(lambda ind: ind.fitness.values[1])
-	stats_size = tools.Statistics(len)
+	stats_size = tools.Statistics(get_max_len)
 	mstats = tools.MultiStatistics(
 		fitness_mse=stats_fit_mse, 
 		fitness_dist=stats_fit_dist, 
 		size=stats_size)
+	# round statistics to four decimal places
 	mstats.register("avg", lambda data: numpy.around(numpy.mean(data), decimals=4))
-	# mstats.register("std", lambda data: numpy.around(numpy.std(data), decimals=4))
 	mstats.register("min", lambda data: numpy.around(numpy.min(data), decimals=4))
 	mstats.register("max", lambda data: numpy.around(numpy.max(data), decimals=4))
 
