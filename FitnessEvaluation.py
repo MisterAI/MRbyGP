@@ -18,6 +18,8 @@ def evalSymbReg(individual, points, toolbox):
 	lhs = individual[0]
 	rhs = individual[1]
 
+	print(str(lhs) + ", " + str(rhs))
+
 	lhs_func = toolbox.compile(individual[0])
 	rhs_func = toolbox.compile(individual[1])
 
@@ -35,32 +37,40 @@ def evalSymbReg(individual, points, toolbox):
 	#nestedTriFlag = checkPow.getTriCount()
 
 	checkPow.visit(lhs_ast)
+
+	lhsNestedPowFlag = checkPow.getPowCount()
+	lhsNestedTriFlag = checkPow.getTriCount()
+
+	checkPow.clearVariable()
+
 	checkPow.visit(rhs_ast)
 
-	nestedPowFlag = checkPow.getPowCount()
-	nestedTriFlag = checkPow.getTriCount()
+	rhsNestedPowFlag = checkPow.getPowCount()
+	rhsNestedTriFlag = checkPow.getTriCount()
 
-	if nestedPowFlag or nestedTriFlag:
+	if lhsNestedPowFlag or lhsNestedTriFlag or rhsNestedTriFlag or rhsNestedTriFlag:
 		#print("NESTED")
-		avg_error = sys.float_info.max / len(points)  
-		return 1- math.pow(1.16, -avg_error)
+		#avg_error = sys.float_info.max / len(points)  
+		#return 1- math.pow(1.16, -avg_error), True
+		return 1, True
 
 	try:
 		# Evaluate the mean squared error between the expression
 		# and the function to analyse
 		#sqerrors = ((func(x) - individual.target_func(x))**2 for x in points)
-		sqerrors = ((lhs.target_func(x) - rhs.individual.target_func(x))**2 for x in points)
+		sqerrors = ((lhs_func(x) - rhs_func(x))**2 for x in points)
 		avg_error = math.fsum(sqerrors) / len(points)
-		return 1 - math.pow(1.16, -avg_error)
+		return 1 - math.pow(1.16, -avg_error), False
 
-	except Exception:
-		#print("Exception")
-		avg_error = sys.float_info.max / len(points) #sys.float_info.max 
-		return 1 - math.pow(1.16, -avg_error)
-
-	except ValueError as e:
-		print('Erroneous individual:', individual)
-		raise e
+	except Exception as e:
+		print(e)
+		return 1, True
+		#avg_error = sys.float_info.max / len(points) #sys.float_info.max 
+		#return 1 - math.pow(1.16, -avg_error), True
+		
+	#except ValueError as e:
+	#	print('Erroneous individual:', individual)
+	#	raise e
 
 class CheckNestedFunc(ast.NodeVisitor):
 
@@ -86,10 +96,14 @@ class CheckNestedFunc(ast.NodeVisitor):
 			return False
 
 	def getTriCount(self):
-		if self.trigonometricCount > 3:
+		if self.trigonometricCount >= 3:
 			return True
 		else:
 			return False
+
+	def clearVariable(self):
+		self.powCount = 0
+		self.trigonometricCount = 0
 
 def get_label(expr):
 	return str(expr.func)
@@ -122,4 +136,17 @@ def evalSimplicity(individual, target_func):
 	return 1 - math.pow(1.016, -sdist)
 
 def get_fitness(individual, target_func, toolbox, points):
-	return evalSymbReg(individual, points, toolbox), evalSimplicity(individual, target_func)
+	evalValue, exceptionFlag = evalSymbReg(individual, points, toolbox) 
+	#print(str(evalValue) + " " + str(exceptionFlag))
+
+	if exceptionFlag:
+		evalDist = 1
+	else:
+		evalDist = evalSimplicity(individual, target_func)
+
+	return evalValue,evalDist
+
+
+
+
+

@@ -11,10 +11,10 @@ import matplotlib.pyplot as plt
 import re
 
 def main():
-	init_pop_size = 1000
-	num_offsprings = 400
-	pop_size = 300
-	num_generations = 10
+	init_pop_size = 2000
+	num_offsprings = 1000
+	pop_size = 2000
+	num_generations = 20
 	mse_fitness_weight = -1.0
 	symb_equiv_fitness_weight = 2.0
 	weights = (mse_fitness_weight, symb_equiv_fitness_weight)

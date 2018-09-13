@@ -4,7 +4,7 @@ import operator
 from deap import creator, base, tools, gp
 from FitnessEvaluation import get_fitness
 from FilterSet import filters
-from helperFunctions import protectedDiv, sinX, protectedPow
+from helperFunctions import protectedDiv, sinX, protectedPow, extendedCxOnePoint, extendedMutUniform, extendedSetStaticLimit
 
 def get_toolbox(target_func, weights):
 
@@ -29,16 +29,16 @@ def get_toolbox(target_func, weights):
 	# define the general form of an individual
 	creator.create("FitnessMulti", base.Fitness, weights=weights)
 	#creator.create("Individual", gp.PrimitiveTree, fitness=creator.FitnessMulti, target_func=target_func)
-	creator.create("Individual", gp.PrimitiveTree, target_func=target_func)
-	creator.create("Tuple", tuple, fitness=creator.FitnessMulti)
+	creator.create("Tree", gp.PrimitiveTree, target_func=target_func)
+	creator.create("Pair", list, fitness=creator.FitnessMulti)
 
 	toolbox = base.Toolbox()
 
 	toolbox.register("expr", gp.genHalfAndHalf, pset=pset, min_=1, max_=3)
-	toolbox.register("individual", tools.initIterate, creator.Individual, toolbox.expr)
-	toolbox.register("tuple", tools.initRepeat, creator.Tuple, toolbox.individual,2)
+	toolbox.register("indTree", tools.initIterate, creator.Tree, toolbox.expr)
+	toolbox.register("pair", tools.initRepeat, creator.Pair, toolbox.indTree, 2)
 	#toolbox.register("population", tools.initRepeat, list, toolbox.individual)
-	toolbox.register("population", tools.initRepeat, list, toolbox.tuple)
+	toolbox.register("population", tools.initRepeat, list, toolbox.pair)
 	toolbox.register("compile", gp.compile, pset=pset)
 
 	eval_range = [x/20. * math.pi for x in range(-20,20)] + [x for x in range(-20, 20)]
@@ -50,12 +50,18 @@ def get_toolbox(target_func, weights):
 		toolbox.decorate('evaluate', tools.DeltaPenalty(filter_, [1000., 0.]))
 	
 	toolbox.register("select", tools.selSPEA2)
-	toolbox.register("mate", gp.cxOnePoint)
+	#toolbox.register("mate", gp.cxOnePoint)
+	toolbox.register("mate", extendedCxOnePoint)
 	toolbox.register("expr_mut", gp.genFull, min_=0, max_=2)
-	toolbox.register("mutate", gp.mutUniform, expr=toolbox.expr_mut, pset=pset)
+	#toolbox.register("mutate", gp.mutUniform, expr=toolbox.expr_mut, pset=pset)
+	toolbox.register("mutate", extendedMutUniform, expr=toolbox.expr_mut, pset=pset)
 
-	toolbox.decorate("mate", gp.staticLimit(key=operator.attrgetter("height"), max_value=17))
-	toolbox.decorate("mate", gp.staticLimit(key=len, max_value=20))
-	toolbox.decorate("mutate", gp.staticLimit(key=operator.attrgetter("height"), max_value=17))
-	toolbox.decorate("mutate", gp.staticLimit(key=len, max_value=20))
+	#toolbox.decorate("mate", gp.staticLimit(key=operator.attrgetter("height"), max_value=17))
+	toolbox.decorate("mate", extendedSetStaticLimit(key=operator.attrgetter("height"), max_value=17))
+	#toolbox.decorate("mate", gp.staticLimit(key=len, max_value=20))
+	toolbox.decorate("mate", extendedSetStaticLimit(key=len, max_value=20))
+	#toolbox.decorate("mutate", gp.staticLimit(key=operator.attrgetter("height"), max_value=17))
+	toolbox.decorate("mutate", extendedSetStaticLimit(key=operator.attrgetter("height"), max_value=17))
+	#toolbox.decorate("mutate", gp.staticLimit(key=len, max_value=20))
+	toolbox.decorate("mutate", extendedSetStaticLimit(key=len, max_value=20))
 	return toolbox

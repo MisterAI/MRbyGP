@@ -15,7 +15,7 @@ def require_function(individual):
 	lhs = individual[0]
 	rhs = individual[1]
 
-	print(str(lhs) + " , " + str(rhs))
+	#print(str(lhs) + " , " + str(rhs))
 
 	if lhs.target_func.__name__ in str(lhs) and rhs.target_func.__name__ in str(rhs):
 		return True

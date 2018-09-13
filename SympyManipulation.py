@@ -88,6 +88,7 @@ def replace_const_sin(expr):
 				has_const_arg = False
 		if has_const_arg:
 			args = [replace_const_sin(arg) for arg in expr.args]
+			#print("Replace Const SIN" + str(args))
 			return sympy.sin(*args)
 	
 	args = [replace_const_sin(arg) for arg in expr.args]
@@ -126,7 +127,7 @@ def round_value(expr):
 
 def eval_const_subtrees(expr):
 	args = [round_value(arg) for arg in expr.args]
-	print(args)
+	#print(args)
 	for i in range(len(args)):
 		args[i] = eval_const_subtrees(args[i])
 	if args:
