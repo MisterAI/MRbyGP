@@ -16,8 +16,6 @@ def evalSymbReg(individual, points, toolbox):
 	lhs = individual[0]
 	rhs = individual[1]
 
-	print(str(lhs) + ", " + str(rhs))
-
 	lhs_func = toolbox.compile(individual[0])
 	rhs_func = toolbox.compile(individual[1])
 

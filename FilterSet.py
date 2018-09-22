@@ -8,10 +8,6 @@ from helperFunctions import protectedDiv, sinX
 
 def require_function(individual):
 	# penalise individuals that do not contain the original function
-	#if individual.target_func.__name__ in str(individual):
-	#	return True
-	#return False
-	#print(individual)
 	lhs = individual[0]
 	rhs = individual[1]
 
