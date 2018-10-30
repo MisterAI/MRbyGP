@@ -88,6 +88,7 @@ def replace_const_sin(expr):
 				has_const_arg = False
 		if has_const_arg:
 			args = [replace_const_sin(arg) for arg in expr.args]
+			#print("Replace Const SIN" + str(args))
 			return sympy.sin(*args)
 	
 	args = [replace_const_sin(arg) for arg in expr.args]
@@ -100,6 +101,8 @@ def convert_to_sympy_expr(individual):
 	# convert graph to AST
 	ind_str = str(individual)
 	my_ast = ast.parse(ind_str)
+	# replace deap specific functions 
+	# with ast specific functions
 	my_ast = ReplaceDiv().visit(my_ast)
 	my_ast = ReplaceSub().visit(my_ast)
 	my_ast = ReplaceNeg().visit(my_ast)
@@ -117,18 +120,24 @@ def convert_to_sympy_expr(individual):
 	return expr
 
 
-def round_value(expr):
-	try:
-		return expr.evalf().round(3)
-	except:
-		return expr.evalf(3)
-
-
 def eval_const_subtrees(expr):
-	args = [round_value(arg) for arg in expr.args]
-	print(args)
+	# recursive function to numerically 
+	# evaluate constant subtrees
+	args = [arg.evalf(3) for arg in expr.args]
 	for i in range(len(args)):
 		args[i] = eval_const_subtrees(args[i])
 	if args:
 		return expr.func(*args)
 	return expr
+
+def conv_to_simple_expr(expr):
+	# simplify expression by numerically evaluating 
+	# constant subtrees and approximating constants 
+	# to three digits
+	expr = convert_to_sympy_expr(expr)
+
+	# Numerically evaluate constant subtrees
+	expr = eval_const_subtrees(expr)
+	expr = sympy.printing.str.sstr(expr, full_prec=False)
+	# Get rid of '-1.0*'
+	return re.sub(r'-[ ]*1\.0\*', '-', expr)
