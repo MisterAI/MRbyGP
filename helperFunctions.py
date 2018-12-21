@@ -36,3 +36,9 @@ def protectedPow(left, right):
 
 	except OverflowError:
 		return sys.float_info.max
+
+def square(x):
+	return x ** 2
+
+def cube(x):
+	return x ** 3

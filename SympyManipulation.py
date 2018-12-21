@@ -78,6 +78,28 @@ class ReplacePow(ast.NodeTransformer):
 			return div_node
 		return node
 
+class ReplaceSquare(ast.NodeTransformer):
+	def visit_Call(self,node):
+		self.generic_visit(node)
+		if node.func.id == 'square':
+			div_node = ast.Call(
+				func=ast.Name(id='Pow', ctx=ast.Load()),
+				args=[node.args[0], ast.Num(2)],
+				keywords=[])
+			return div_node
+		return node
+
+class ReplaceCube(ast.NodeTransformer):
+	def visit_Call(self,node):
+		self.generic_visit(node)
+		if node.func.id == 'cube':
+			div_node = ast.Call(
+				func=ast.Name(id='Pow', ctx=ast.Load()),
+				args=[node.args[0], ast.Num(3)],
+				keywords=[])
+			return div_node
+		return node
+
 def replace_const_sin(expr):
 	"""Replace sinX() function by sin() function 
 	if its argument is independent of x."""
@@ -106,7 +128,8 @@ def convert_to_sympy_expr(individual):
 	my_ast = ReplaceDiv().visit(my_ast)
 	my_ast = ReplaceSub().visit(my_ast)
 	my_ast = ReplaceNeg().visit(my_ast)
-	my_ast = ReplacePow().visit(my_ast)
+	my_ast = ReplaceSquare().visit(my_ast)
+	my_ast = ReplaceCube().visit(my_ast)
 
 	expr_string = astor.to_source(my_ast)
 	expr_string = re.sub(r'add[\n ]*\(', 'Add(', expr_string)

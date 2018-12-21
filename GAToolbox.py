@@ -4,7 +4,7 @@ import operator
 from deap import creator, base, tools, gp
 from FitnessEvaluation import get_fitness
 from FilterSet import filters
-from helperFunctions import protectedDiv, sinX, protectedPow
+from helperFunctions import protectedDiv, sinX, square, cube
 
 def twosided_mate(ind1, ind2):
 	# Mate function for individuals consisting of two trees.
@@ -45,7 +45,8 @@ def get_toolbox(target_func, weights):
 	pset.addPrimitive(operator.mul, 2)
 	pset.addPrimitive(protectedDiv, 2)
 	pset.addPrimitive(operator.neg, 1)
-	pset.addPrimitive(protectedPow, 2)
+	pset.addPrimitive(square, 1)
+	pset.addPrimitive(cube, 1)
 	pset.addPrimitive(math.cos, 1)
 	pset.addPrimitive(sinX, 1)
 	pset.addEphemeralConstant("rand101", lambda: random.randint(-1,1))
