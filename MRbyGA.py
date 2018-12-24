@@ -2,27 +2,59 @@ import random
 import math
 import numpy
 import sympy
+import operator
+import scoop
 from SympyManipulation import convert_to_sympy_expr, eval_const_subtrees, conv_to_simple_expr
-from deap import tools, algorithms
+from deap import tools, algorithms, creator, base, gp
 from GAToolbox import get_toolbox, get_max_len
+from helperFunctions import protectedDiv, sinX, square, cube
 import datetime
 import time
 import matplotlib.pyplot as plt
 import re
+import cProfile
+
+# set some general parameters
+init_pop_size = 300
+num_offsprings = 400
+pop_size = 300
+num_generations = 15
+mse_fitness_weight = -1.0
+symb_equiv_fitness_weight = 1.0
+weights = (mse_fitness_weight, symb_equiv_fitness_weight)
+# list all the functions to analyse
+functions = [math.sin]
+
+# define the general form of an individual
+# (one individual consists of two hand-sides, left and right;
+# each hand-side consists of one computational graph)
+creator.create("FitnessMulti", base.Fitness, weights=weights)
+creator.create("Handside", gp.PrimitiveTree, target_func=functions[0])
+creator.create("Individual", list, fitness=creator.FitnessMulti)
+
+# collect the atomic building blocks of the individuals
+pset = gp.PrimitiveSet("MAIN", 1)
+pset.addPrimitive(operator.add, 2)
+pset.addPrimitive(operator.sub, 2)
+pset.addPrimitive(operator.mul, 2)
+pset.addPrimitive(protectedDiv, 2)
+pset.addPrimitive(operator.neg, 1)
+pset.addPrimitive(square, 1)
+pset.addPrimitive(cube, 1)
+pset.addPrimitive(math.cos, 1)
+pset.addPrimitive(sinX, 1)
+pset.addTerminal(math.pi)
+if not scoop.IS_ORIGIN:
+	pset.addEphemeralConstant("rand101", lambda: random.randint(-1,1))
+	pset.addEphemeralConstant("rand10010", lambda: random.randint(-10,10))
+
+	# Constant Simplification
+	pset.addEphemeralConstant("randfloat10010", lambda: random.uniform(-10.0,10.0))
+
 
 def main():
-	init_pop_size = 2000
-	num_offsprings = 1000
-	pop_size = 2000
-	num_generations = 20
-	mse_fitness_weight = -1.0
-	symb_equiv_fitness_weight = 2.0
-	weights = (mse_fitness_weight, symb_equiv_fitness_weight)
-	# list all the functions to analyse
-	functions = [math.sin]
-
 	# create the toolbox
-	toolbox = get_toolbox(functions[0], weights)
+	toolbox = get_toolbox(functions[0], weights, pset)
 
 	# random.seed(318)
 

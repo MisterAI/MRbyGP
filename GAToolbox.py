@@ -1,10 +1,11 @@
 import random
 import math
-import operator
+from scoop import futures
 from deap import creator, base, tools, gp
 from FitnessEvaluation import get_fitness
 from FilterSet import filters
 from helperFunctions import protectedDiv, sinX, square, cube
+
 
 def twosided_mate(ind1, ind2):
 	# Mate function for individuals consisting of two trees.
@@ -37,34 +38,13 @@ def get_max_height(individual):
 def get_max_len(individual):
 	return max(len(individual[0]), len(individual[1]))
 
-def get_toolbox(target_func, weights):
-	# collect the atomic building blocks of the individuals
-	pset = gp.PrimitiveSet("MAIN", 1)
-	pset.addPrimitive(operator.add, 2)
-	pset.addPrimitive(operator.sub, 2)
-	pset.addPrimitive(operator.mul, 2)
-	pset.addPrimitive(protectedDiv, 2)
-	pset.addPrimitive(operator.neg, 1)
-	pset.addPrimitive(square, 1)
-	pset.addPrimitive(cube, 1)
-	pset.addPrimitive(math.cos, 1)
-	pset.addPrimitive(sinX, 1)
-	pset.addEphemeralConstant("rand101", lambda: random.randint(-1,1))
-	pset.addEphemeralConstant("rand10010", lambda: random.randint(-10,10))
-	pset.addTerminal(math.pi)
-
-	# Constant Simplification
-	pset.addEphemeralConstant("randfloat10010", lambda: random.uniform(-10.0,10.0))
+def get_toolbox(target_func, weights, pset):
 
 
-	# define the general form of an individual
-	# (one individual consists of two hand-sides, left and right;
-	# each hand-side consists of one computational graph)
-	creator.create("FitnessMulti", base.Fitness, weights=weights)
-	creator.create("Handside", gp.PrimitiveTree, target_func=target_func)
-	creator.create("Individual", list, fitness=creator.FitnessMulti)
 
 	toolbox = base.Toolbox()
+
+	toolbox.register("map", futures.map)
 
 	toolbox.register("expr", gp.genHalfAndHalf, pset=pset, min_=1, max_=3)
 	toolbox.register("handside", tools.initIterate, creator.Handside, toolbox.expr)
